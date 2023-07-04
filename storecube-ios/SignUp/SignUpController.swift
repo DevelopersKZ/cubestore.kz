@@ -48,8 +48,11 @@ final class SignUpController: UIViewController {
         return button
     }()
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupViews()
         setupConstraints()
         view.backgroundColor = .white
