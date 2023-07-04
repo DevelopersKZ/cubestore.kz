@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SignInController: UIViewController {
+final class SignInController: UIViewController {
     
     // MARK: - UI
     
@@ -60,15 +60,17 @@ class SignInController: UIViewController {
         return button
     }()
 
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupViews()
         setupConstraints()
         view.backgroundColor = .white
     }
     
-    //MARK - setupViews
+    // MARK: - setupViews
     
     private func setupViews() {
         view.addSubview(signInLabel)
@@ -79,7 +81,7 @@ class SignInController: UIViewController {
     }
 
     
-    //MARK - setupConstraints
+    // MARK: - setupConstraints
     
     private func setupConstraints() {
         signInLabel.snp.makeConstraints { make in
