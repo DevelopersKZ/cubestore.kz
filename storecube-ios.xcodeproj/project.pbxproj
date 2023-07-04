@@ -15,6 +15,7 @@
 		F1E292F12A53EC14002C798A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E292EF2A53EC14002C798A /* Main.storyboard */; };
 		F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F22A53EC16002C798A /* Assets.xcassets */; };
 		F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */; };
+		F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292FE2A5427D1002C798A /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F1E292F22A53EC16002C798A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E292F52A53EC16002C798A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E292F72A53EC16002C798A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E292FE2A5427D1002C798A /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,14 @@
 				F1E292F72A53EC16002C798A /* Info.plist */,
 			);
 			path = "storecube-ios";
+			sourceTree = "<group>";
+		};
+		F1E292FD2A5427A7002C798A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F1E292FE2A5427D1002C798A /* SignUpController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		FD86AA5D1C5997DEA7E9810C /* Pods */ = {
@@ -221,6 +231,7 @@
 				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
+				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
