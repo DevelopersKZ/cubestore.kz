@@ -59,6 +59,14 @@ final class SignInController: UIViewController {
         button.layer.cornerRadius = 14
         return button
     }()
+    
+    private lazy var forgotButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Forgot password", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.backgroundColor = .clear
+        return button
+    }()
 
     // MARK: - Lifecycle
     
@@ -78,6 +86,7 @@ final class SignInController: UIViewController {
         view.addSubview(passwordTextField)
         view.addSubview(signInButton)
         view.addSubview(createButton)
+        view.addSubview(forgotButton)
     }
 
     
@@ -114,6 +123,12 @@ final class SignInController: UIViewController {
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
             make.height.equalTo(53)
+        }
+        
+        forgotButton.snp.makeConstraints{ make in
+            make.top.equalTo(createButton.snp.bottom).offset(270)
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().offset(-16)
         }
     }
     
