@@ -38,8 +38,6 @@ final class FavouriteTableViewCell: UITableViewCell {
         label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
-
-    
     
     // MARK: - Lifecycle
     
@@ -62,8 +60,8 @@ final class FavouriteTableViewCell: UITableViewCell {
         contentView.addSubview(countLabel)
         contentView.addSubview(productNameLabel)
         contentView.addSubview(priceLabel)
-
     }
+    
     // MARK: - setupConstraints
     
     private func setupConstraints() {
