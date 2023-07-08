@@ -44,7 +44,7 @@ final class SignUpController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.tintColor = .black
         button.backgroundColor = .blue
-        button.layer.cornerRadius = 14
+        button.layer.cornerRadius = 15
         return button
     }()
     
