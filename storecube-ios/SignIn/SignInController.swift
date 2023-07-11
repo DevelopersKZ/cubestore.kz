@@ -80,7 +80,7 @@ final class SignInController: UIViewController {
     
     // MARK: - setupViews
     
-    private func setupViews() {
+    private func setupViews() { 
         view.addSubview(signInLabel)
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
