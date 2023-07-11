@@ -1,5 +1,5 @@
 //
-//  ProfileController.swift
+//  EditProfileController.swift
 //  storecube-ios
 //
 //  Created by Радмир Тельман on 11.07.2023.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class ProfileController: UIViewController {
+final class EditProfileController: UIViewController {
     
     // MARK: - UI
     
