@@ -102,7 +102,6 @@
 		F134C1D62A606E0300E73121 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F134C1DB2A60785500E73121 /* Resources  */,
 				F134C1D72A606E4C00E73121 /* Extensions  */,
 			);
 			path = Helpers;
@@ -154,6 +153,7 @@
 		F1E292E82A53EC14002C798A /* storecube-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F134C1DB2A60785500E73121 /* Resources  */,
 				F134C1D62A606E0300E73121 /* Helpers */,
 				F134C1D32A60675D00E73121 /* Onboarding */,
 				517641B52A5D515A00620908 /* EditProfile */,
