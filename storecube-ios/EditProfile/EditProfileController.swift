@@ -62,6 +62,8 @@ final class EditProfileController: UIViewController {
         view.backgroundColor = .white
     }
     
+    // MARK: - setupViews
+    
     private func setupViews() {
         view.addSubview(profileLabel)
         view.addSubview(nameTextField)
@@ -69,6 +71,8 @@ final class EditProfileController: UIViewController {
         view.addSubview(phoneTextField)
         view.addSubview(saveButton)
     }
+    
+    // MARK - setupConstraints
     
     private func setupConstraints() {
         profileLabel.snp.makeConstraints { make in
