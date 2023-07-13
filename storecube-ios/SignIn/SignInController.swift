@@ -42,7 +42,7 @@ final class SignInController: UIViewController {
             blue: CGFloat(0xFD) / 255.0,
             alpha: 1.0
         )
-        button.layer.cornerRadius = 14
+            button.layer.cornerRadius = 14
         return button
     }()
     
