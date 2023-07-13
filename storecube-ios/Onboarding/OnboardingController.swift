@@ -28,23 +28,24 @@ final class OnboardingController: UIViewController {
     private lazy var cubeStoreLabel: UILabel = {
         let label = UILabel()
         label.text = "CubeStore"
-        label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 36)
+        label.textColor = AppColor.black.uiColor
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Montserrat-Medium", size: 35)
         return label
     }()
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Rubik's Cube Store"
-        label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.textColor = AppColor.black.uiColor
+        label.font = UIFont(name: "Montserrat-SemiBold", size: 25)
         return label
     }()
     
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         label.text = "The Rubik's Cube is a mechanical puzzle invented in 1974 by the Hungarian sculptor and architecture teacher Erno Rubik. The puzzle is a plastic cube with visible colored stickers."
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = UIFont(name: "Montserrat-Light", size: 15)
         label.textColor = .gray
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -55,11 +56,7 @@ final class OnboardingController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Get Started", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = UIColor(
-            red: CGFloat(0x93) / 255.0,
-            green: CGFloat(0xC2) / 255.0,
-            blue: CGFloat(0xFD) / 255.0,
-            alpha: 1.0)
+        button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
         return button
     }()
@@ -71,7 +68,7 @@ final class OnboardingController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = .white
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     override func viewDidLayoutSubviews() {
