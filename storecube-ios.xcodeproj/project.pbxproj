@@ -142,7 +142,7 @@
 		F134C1D62A606E0300E73121 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F134C1DE2A60792200E73121 /* Resourses */,
+				F134C1DE2A60792200E73121 /* Resources  */,
 				F134C1D72A606E4C00E73121 /* Extensions  */,
 			);
 			path = Helpers;
@@ -173,14 +173,14 @@
 			path = "Resources ";
 			sourceTree = "<group>";
 		};
-		F134C1DE2A60792200E73121 /* Resourses */ = {
+		F134C1DE2A60792200E73121 /* Resources  */ = {
 			isa = PBXGroup;
 			children = (
 				F134C1E32A607CF500E73121 /* Fonts */,
 				F134C1DF2A60794100E73121 /* AppColor .swift */,
 				F134C1E12A607C3200E73121 /* AppImage.swift */,
 			);
-			path = Resourses;
+			path = "Resources ";
 			sourceTree = "<group>";
 		};
 		F134C1E32A607CF500E73121 /* Fonts */ = {
