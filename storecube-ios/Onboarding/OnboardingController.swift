@@ -58,6 +58,7 @@ final class OnboardingController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
+        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 25)
         return button
     }()
     
