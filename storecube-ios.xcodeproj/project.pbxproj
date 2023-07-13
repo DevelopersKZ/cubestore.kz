@@ -14,6 +14,7 @@
 		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
 		F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1D42A60677800E73121 /* OnboardingController.swift */; };
 		F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */; };
+		F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F134C1DC2A60788000E73121 /* Colors.xcassets */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
 		F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292EB2A53EC14002C798A /* SceneDelegate.swift */; };
 		F1E292EE2A53EC14002C798A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292ED2A53EC14002C798A /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F134C1D42A60677800E73121 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F134C1DC2A60788000E73121 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F1E292E62A53EC14002C798A /* storecube-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storecube-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E292E92A53EC14002C798A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E292EB2A53EC14002C798A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		F134C1D62A606E0300E73121 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F134C1DB2A60785500E73121 /* Resources  */,
 				F134C1D72A606E4C00E73121 /* Extensions  */,
 			);
 			path = Helpers;
@@ -119,6 +122,15 @@
 				F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */,
 			);
 			path = "UIView+Extensions";
+			sourceTree = "<group>";
+		};
+		F134C1DB2A60785500E73121 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				F1E292F22A53EC16002C798A /* Assets.xcassets */,
+				F134C1DC2A60788000E73121 /* Colors.xcassets */,
+			);
+			path = "Resources ";
 			sourceTree = "<group>";
 		};
 		F1E292DD2A53EC14002C798A = {
@@ -152,7 +164,6 @@
 				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
 				F1E292ED2A53EC14002C798A /* ViewController.swift */,
 				F1E292EF2A53EC14002C798A /* Main.storyboard */,
-				F1E292F22A53EC16002C798A /* Assets.xcassets */,
 				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
 				F1E292F72A53EC16002C798A /* Info.plist */,
 			);
@@ -237,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */,
+				F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */,
 				F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */,
 				F1E292F12A53EC14002C798A /* Main.storyboard in Resources */,
 			);
