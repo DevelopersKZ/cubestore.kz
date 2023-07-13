@@ -14,7 +14,7 @@ final class OnboardingController: UIViewController {
      
     private lazy var imageCube: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "cubeCarl")
+        imageView.image = AppImage.cubeCarl.uiImage
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
@@ -55,7 +55,7 @@ final class OnboardingController: UIViewController {
     private lazy var continueButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Get Started", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(AppColor.black.uiColor, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
         button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 25)
