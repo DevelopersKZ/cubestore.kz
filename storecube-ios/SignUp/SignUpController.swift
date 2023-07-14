@@ -23,7 +23,8 @@ final class SignUpController: UIViewController {
         let label = UILabel()
         label.text = "Registration"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Medium", size: 36)
+        label.font = UIFont(name: "Montserrat-Medium", size: 35)
+        label.numberOfLines = 0
         return label
     }()
     
@@ -34,6 +35,8 @@ final class SignUpController: UIViewController {
         textField.borderStyle = .roundedRect
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 0.5
+        textField.layer.cornerRadius = 20
+        textField.textColor = AppColor.black.uiColor
         return textField
     }()
     
@@ -44,6 +47,8 @@ final class SignUpController: UIViewController {
         textField.borderStyle = .roundedRect
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 0.5
+        textField.layer.cornerRadius = 20
+        textField.textColor = AppColor.black.uiColor
         return textField
     }()
     
@@ -54,6 +59,8 @@ final class SignUpController: UIViewController {
         textField.borderStyle = .roundedRect
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 0.5
+        textField.layer.cornerRadius = 20
+        textField.textColor = AppColor.black.uiColor
         return textField
     }()
     
@@ -62,7 +69,7 @@ final class SignUpController: UIViewController {
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(AppColor.black.uiColor, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
-        button.layer.cornerRadius = 14
+        button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 25)
         return button
     }()
