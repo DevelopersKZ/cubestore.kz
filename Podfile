@@ -8,7 +8,5 @@ target 'storecube-ios' do
   # Pods for storecube-ios
 
   pod 'SnapKit', '5.6.0'
-  pod 'InputMask', '6.1.0'
-  pod 'SkyFloatingLabelTextField', '3.8.0'
 
 end
