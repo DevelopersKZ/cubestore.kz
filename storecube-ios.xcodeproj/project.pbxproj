@@ -252,6 +252,7 @@
                 517641B52A5D515A00620908 /* EditProfile */,
                 51D433A02A59760800CF019B /* Favourites */,
                 515EF9472A545DBC00557B80 /* SignIn */,
+                F1E292FD2A5427A7002C798A /* SignUp */,
 			);
 			path = "storecube-ios";
 			sourceTree = "<group>";
