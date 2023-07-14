@@ -59,6 +59,7 @@ final class OnboardingController: UIViewController {
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 25)
+        button.addTarget(self, action: #selector(saveButtonDidPress), for: .touchUpInside)
         return button
     }()
     
@@ -125,5 +126,11 @@ final class OnboardingController: UIViewController {
             make.trailing.equalTo(welcomeView).offset(-16)
             make.height.equalTo(52)
         }
+    }
+    
+    // MARK: - Actions
+    
+    @objc func saveButtonDidPress() {
+        self.navigationController?.pushViewController(SignUpController(), animated: true)
     }
 }
