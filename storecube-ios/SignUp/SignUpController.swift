@@ -32,11 +32,13 @@ final class SignUpController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Name"
         textField.backgroundColor = AppColor.white.uiColor
-        textField.borderStyle = .roundedRect
+        textField.borderStyle = .none
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 0.5
         textField.layer.cornerRadius = 20
         textField.textColor = AppColor.black.uiColor
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 0))
+        textField.leftViewMode = .always
         return textField
     }()
     
@@ -44,11 +46,13 @@ final class SignUpController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Email"
         textField.backgroundColor = AppColor.white.uiColor
-        textField.borderStyle = .roundedRect
+        textField.borderStyle = .none
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 0.5
         textField.layer.cornerRadius = 20
         textField.textColor = AppColor.black.uiColor
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 0))
+        textField.leftViewMode = .always
         return textField
     }()
     
@@ -56,11 +60,13 @@ final class SignUpController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Password"
         textField.backgroundColor = AppColor.white.uiColor
-        textField.borderStyle = .roundedRect
+        textField.borderStyle = .none
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 0.5
         textField.layer.cornerRadius = 20
         textField.textColor = AppColor.black.uiColor
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 0))
+        textField.leftViewMode = .always
         return textField
     }()
     
