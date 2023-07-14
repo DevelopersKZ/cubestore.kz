@@ -162,7 +162,9 @@ final class SignInController: UIViewController {
     // MARK: - Actions
     
     @objc func registerHelpButtonDidPress() {
-        self.navigationController?.pushViewController(SignUpController(), animated: true)
+        let controller = SignUpController()
+        controller.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc func aboutButtonDidPress() {
