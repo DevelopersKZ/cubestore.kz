@@ -12,62 +12,88 @@ final class SignInController: UIViewController {
     
     // MARK: - UI
     
-    private lazy var signInLabel: UILabel = {
+    private lazy var imageCarl: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = AppImage.carlDance.uiImage
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    private lazy var signUpLabel: UILabel = {
         let label = UILabel()
-        label.text = "Sign In"
-        label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.text = "Login"
+        label.textColor = AppColor.black.uiColor
+        label.font = UIFont(name: "Montserrat-Medium", size: 35)
+        label.numberOfLines = 0
         return label
     }()
     
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "E-mail"
+        textField.placeholder = "Email"
+        textField.backgroundColor = AppColor.white.uiColor
+        textField.borderStyle = .none
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.borderWidth = 0.5
+        textField.layer.cornerRadius = 20
+        textField.textColor = AppColor.black.uiColor
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 0))
+        textField.leftViewMode = .always
         return textField
     }()
     
     private lazy var passwordTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Password"
+        textField.backgroundColor = AppColor.white.uiColor
+        textField.borderStyle = .none
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.borderWidth = 0.5
+        textField.layer.cornerRadius = 20
+        textField.textColor = AppColor.black.uiColor
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 0))
+        textField.leftViewMode = .always
         return textField
     }()
     
-    private lazy var signInButton: UIButton = {
-        let button = UIButton()
+    private lazy var signUpButton: UIButton = {
+        let button = UIButton(type: .system)
         button.setTitle("Sign In", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = UIColor(
-            red: CGFloat(0x93) / 255.0,
-            green: CGFloat(0xC2) / 255.0,
-            blue: CGFloat(0xFD) / 255.0,
-            alpha: 1.0
-        )
-            button.layer.cornerRadius = 14
+        button.setTitleColor(AppColor.black.uiColor, for: .normal)
+        button.backgroundColor = AppColor.aqua.uiColor
+        button.layer.cornerRadius = 20
+        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 25)
         return button
     }()
     
-    private lazy var createButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Create Account", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = UIColor(
-            red: CGFloat(242) / 255.0,
-            green: CGFloat(243) / 255.0,
-            blue: CGFloat(245) / 255.0,
-            alpha: 1.0
-        )
-        button.layer.cornerRadius = 14
+    private lazy var helpRegisterLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Do you already have an account?"
+        label.textColor = AppColor.black.uiColor
+        label.font = UIFont(name: "Montserrat-Regular", size: 20)
+        label.numberOfLines = 0
+        label.textAlignment = .left
+        return label
+    }()
+    
+    private lazy var helpRegisterButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Register", for: .normal)
+        button.setTitleColor(AppColor.aqua.uiColor, for: .normal)
+        button.layer.cornerRadius = 20
+        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 20)
+        button.titleLabel?.attributedText = NSAttributedString(string: "Register", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
+        button.addTarget(self, action: #selector(registerHelpButtonDidPress), for: .touchUpInside)
         return button
     }()
     
-    private lazy var forgotButton: UIButton = {
+    private lazy var aboutButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Forgot password", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
-        button.backgroundColor = .clear
+        button.setImage(AppImage.info.uiImage, for: .normal)
+        button.addTarget(self, action: #selector(aboutButtonDidPress), for: .touchUpInside)
         return button
     }()
-
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -75,61 +101,73 @@ final class SignInController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = .white
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
     
-    private func setupViews() { 
-        view.addSubview(signInLabel)
-        view.addSubview(emailTextField)
-        view.addSubview(passwordTextField)
-        view.addSubview(signInButton)
-        view.addSubview(createButton)
-        view.addSubview(forgotButton)
+    private func setupViews() {
+        [imageCarl, signUpLabel, emailTextField, passwordTextField, signUpButton, helpRegisterLabel, helpRegisterButton, aboutButton].forEach {
+            view.addSubview($0)
+        }
     }
-
     
     // MARK: - setupConstraints
     
     private func setupConstraints() {
-        signInLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(93)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
+        imageCarl.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(158)
+            make.trailing.leading.equalToSuperview()
         }
-        
+        signUpLabel.snp.makeConstraints { make in
+            make.top.equalTo(imageCarl.snp.bottom).offset(40)
+            make.leading.equalToSuperview().offset(145)
+            make.trailing.equalToSuperview().offset(-144)
+        }
         emailTextField.snp.makeConstraints { make in
-            make.top.equalTo(signInLabel.snp.bottom).offset(40)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
+            make.top.equalTo(signUpLabel.snp.bottom).offset(20)
+            make.leading.equalToSuperview().offset(34)
+            make.trailing.equalToSuperview().offset(-30)
+            make.height.equalTo(52)
         }
-        
-        passwordTextField.snp.makeConstraints{ make in
-            make.top.equalTo(emailTextField.snp.bottom).offset(40)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
+        passwordTextField.snp.makeConstraints { make in
+            make.top.equalTo(emailTextField.snp.bottom).offset(14)
+            make.leading.equalToSuperview().offset(34)
+            make.trailing.equalToSuperview().offset(-30)
+            make.height.equalTo(52)
         }
-        
-        signInButton.snp.makeConstraints{ make in
-            make.top.equalTo(passwordTextField.snp.bottom).offset(100)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
-            make.height.equalTo(53)
+        signUpButton.snp.makeConstraints { make in
+            make.top.equalTo(passwordTextField.snp.bottom).offset(30)
+            make.leading.equalToSuperview().offset(34)
+            make.trailing.equalToSuperview().offset(-30)
+            make.height.equalTo(52)
         }
-        
-        createButton.snp.makeConstraints{ make in
-            make.top.equalTo(signInButton.snp.bottom).offset(20)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
-            make.height.equalTo(53)
+        helpRegisterLabel.snp.makeConstraints { make in
+            make.top.equalTo(signUpButton.snp.bottom).offset(38)
+            make.leading.equalToSuperview().offset(35)
+            make.trailing.equalToSuperview().offset(-33)
         }
-        
-        forgotButton.snp.makeConstraints{ make in
-            make.top.equalTo(createButton.snp.bottom).offset(270)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
+        helpRegisterButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-145)
+            make.bottom.equalToSuperview().offset(-30)
+        }
+        aboutButton.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(290)
+            make.trailing.equalToSuperview().offset(-40)
+            make.bottom.equalToSuperview().offset(-35)
+            make.height.equalTo(52)
         }
     }
     
+    // MARK: - Actions
+    
+    @objc func registerHelpButtonDidPress() {
+        let controller = SignUpController()
+        controller.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc func aboutButtonDidPress() {
+        self.navigationController?.pushViewController(OffersController(), animated: true)
+    }
 }
