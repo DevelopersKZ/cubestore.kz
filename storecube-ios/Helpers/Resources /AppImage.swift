@@ -32,4 +32,5 @@ extension AppImageProtocol {
 enum AppImage: String, AppImageProtocol {
     case cube
     case cubeCarl
+    case jimmyDog
 }

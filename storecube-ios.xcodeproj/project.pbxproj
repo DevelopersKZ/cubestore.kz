@@ -35,10 +35,9 @@
 		F134C2052A607D4C00E73121 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */; };
 		F134C2062A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */; };
 		F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */; };
+		F134C20B2A6106B200E73121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F134C20A2A6106B200E73121 /* Main.storyboard */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
 		F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292EB2A53EC14002C798A /* SceneDelegate.swift */; };
-		F1E292EE2A53EC14002C798A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292ED2A53EC14002C798A /* ViewController.swift */; };
-		F1E292F12A53EC14002C798A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E292EF2A53EC14002C798A /* Main.storyboard */; };
 		F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F22A53EC16002C798A /* Assets.xcassets */; };
 		F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */; };
 		F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292FE2A5427D1002C798A /* SignUpController.swift */; };
@@ -75,11 +74,10 @@
 		F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		F134C20A2A6106B200E73121 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F1E292E62A53EC14002C798A /* storecube-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storecube-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E292E92A53EC14002C798A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E292EB2A53EC14002C798A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1E292ED2A53EC14002C798A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1E292F02A53EC14002C798A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1E292F22A53EC16002C798A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E292F52A53EC16002C798A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E292F72A53EC16002C798A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,6 +227,11 @@
 		F1E292E82A53EC14002C798A /* storecube-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F1E292E92A53EC14002C798A /* AppDelegate.swift */,
+				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
+				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
+				F134C20A2A6106B200E73121 /* Main.storyboard */,
+				F1E292F72A53EC16002C798A /* Info.plist */,
 				F134C1DB2A60785500E73121 /* Resources  */,
 				F134C1D62A606E0300E73121 /* Helpers */,
 				F134C1D32A60675D00E73121 /* Onboarding */,
@@ -236,12 +239,6 @@
 				51D433A02A59760800CF019B /* Favourites */,
 				515EF9472A545DBC00557B80 /* SignIn */,
 				F1E292FD2A5427A7002C798A /* SignUp */,
-				F1E292E92A53EC14002C798A /* AppDelegate.swift */,
-				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
-				F1E292ED2A53EC14002C798A /* ViewController.swift */,
-				F1E292EF2A53EC14002C798A /* Main.storyboard */,
-				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
-				F1E292F72A53EC16002C798A /* Info.plist */,
 			);
 			path = "storecube-ios";
 			sourceTree = "<group>";
@@ -328,6 +325,7 @@
 				F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */,
 				F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */,
 				F134C1FD2A607D4C00E73121 /* Montserrat-ThinItalic.ttf in Resources */,
+				F134C20B2A6106B200E73121 /* Main.storyboard in Resources */,
 				F134C1F82A607D4C00E73121 /* Montserrat-Regular.ttf in Resources */,
 				F134C2012A607D4C00E73121 /* Montserrat-Light.ttf in Resources */,
 				F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */,
@@ -336,7 +334,6 @@
 				F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */,
 				F134C1F72A607D4C00E73121 /* Montserrat-Italic.ttf in Resources */,
 				F134C1F92A607D4C00E73121 /* Montserrat-ExtraBold.ttf in Resources */,
-				F1E292F12A53EC14002C798A /* Main.storyboard in Resources */,
 				F134C1F62A607D4C00E73121 /* Montserrat-ExtraLight.ttf in Resources */,
 				F134C2052A607D4C00E73121 /* Montserrat-SemiBold.ttf in Resources */,
 				F134C2022A607D4C00E73121 /* Montserrat-Thin.ttf in Resources */,
@@ -397,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E292EE2A53EC14002C798A /* ViewController.swift in Sources */,
 				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
 				F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
@@ -415,14 +411,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F1E292EF2A53EC14002C798A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1E292F02A53EC14002C798A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -29,4 +29,5 @@ enum AppColor: String, AppColorProtocol {
     case aqua
     case silver
     case black
+    case white
 }
