@@ -15,6 +15,7 @@ final class CouponTableViewCell: UITableViewCell {
     private lazy var couponImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "coupon")
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
         
@@ -26,7 +27,6 @@ final class CouponTableViewCell: UITableViewCell {
         label.textAlignment = .center
         return label
     }()
-    
     
     private lazy var saleLabel: UILabel = {
         let label = UILabel()
@@ -45,15 +45,11 @@ final class CouponTableViewCell: UITableViewCell {
     private lazy var copyButton: UIButton = {
         let button = UIButton()
         button.setTitle("COPY", for: .normal)
-        button.setTitleColor(UIColor(red: 0.576, green: 0.761, blue: 0.992, alpha: 1.0), for: .normal)
+        button.tintColor = .blue
         button.backgroundColor = .black
         button.layer.cornerRadius = 14
         return button
     }()
-
-
-
-    
 
     // MARK: - Lifecycle
     
@@ -72,11 +68,9 @@ final class CouponTableViewCell: UITableViewCell {
     // MARK: - setupViews
     
     private func setupViews() {
-        addSubview(couponImageView)
-        addSubview(percentLabel)
-        addSubview(saleLabel)
-        addSubview(timeLabel)
-        addSubview(copyButton)
+        [couponImageView, percentLabel, saleLabel, timeLabel, copyButton].forEach {
+            contentView.addSubview($0)
+        }
     }
     
     // MARK: - setupConstraints
@@ -96,23 +90,19 @@ final class CouponTableViewCell: UITableViewCell {
         }
         
         saleLabel.snp.makeConstraints { make in
-            make.top.equalTo(couponImageView.snp.bottom).offset(50)
+            make.top.equalTo(couponImageView.snp.top).offset(36)
             make.leading.equalTo(percentLabel.snp.trailing).offset(50)
         }
         
         timeLabel.snp.makeConstraints() { make in
-            make.top.equalTo(saleLabel.snp.bottom).offset(10)
+            make.top.equalTo(saleLabel.snp.bottom).offset(4)
             make.leading.equalTo(percentLabel.snp.trailing).offset(50)
         }
         
         copyButton.snp.makeConstraints { make in
-            make.top.equalTo(couponImageView.snp.bottom).offset(50)
+            make.centerY.equalTo(couponImageView.snp.centerY)
             make.trailing.equalTo(couponImageView.snp.trailing).offset(-20)
-            make.leading.greaterThanOrEqualTo(saleLabel.snp.trailing).offset(20)
-            make.height.equalTo(70)
-            make.width.equalTo(70)
+            make.size.equalTo(70)
         }
-
     }
-    
 }

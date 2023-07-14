@@ -13,7 +13,7 @@ final class OffersController: UIViewController {
     // MARK: - UI
         
     private lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
+        let tableView = UITableView()
         tableView.register(CouponTableViewCell.self, forCellReuseIdentifier: "Coupon")
         tableView.rowHeight = 145
         tableView.dataSource = self
@@ -30,7 +30,6 @@ final class OffersController: UIViewController {
         setupViews()
         setupConstraints()
         view.backgroundColor = .white
-
     }
     
     // MARK: - setupViews
@@ -55,8 +54,12 @@ extension OffersController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Coupon", for: indexPath) as! CouponTableViewCell
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "Coupon",
+            for: indexPath
+        ) as? CouponTableViewCell else {
+            fatalError("Could not cast to file")
+        }
         return cell
     }
 }
-
