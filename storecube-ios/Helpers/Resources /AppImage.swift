@@ -33,4 +33,5 @@ enum AppImage: String, AppImageProtocol {
     case cube
     case cubeCarl
     case jimmyDog
+    case coupon
 }

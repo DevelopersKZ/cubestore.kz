@@ -14,7 +14,7 @@ final class CouponTableViewCell: UITableViewCell {
     
     private lazy var couponImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "coupon")
+        imageView.image = AppImage.coupon.uiImage
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
@@ -43,10 +43,10 @@ final class CouponTableViewCell: UITableViewCell {
     }()
     
     private lazy var copyButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("COPY", for: .normal)
-        button.tintColor = .blue
-        button.backgroundColor = .black
+        button.tintColor = AppColor.aqua.uiColor
+        button.backgroundColor = AppColor.black.uiColor
         button.layer.cornerRadius = 14
         return button
     }()
