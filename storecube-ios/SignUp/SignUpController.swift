@@ -93,12 +93,9 @@ final class SignUpController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        view.addSubview(imageJimmy)
-        view.addSubview(signUpLabel)
-        view.addSubview(nameTextField)
-        view.addSubview(emailTextField)
-        view.addSubview(passwordTextField)
-        view.addSubview(signUpButton)
+        [imageJimmy, signUpLabel, nameTextField, emailTextField, passwordTextField, signUpButton].forEach {
+            view.addSubview($0)
+        }
     }
     
     // MARK: - setupConstraints

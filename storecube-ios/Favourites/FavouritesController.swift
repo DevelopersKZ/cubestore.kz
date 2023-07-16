@@ -15,7 +15,7 @@ final class FavouritesController: UIViewController {
     private lazy var favouritesLabel: UILabel = {
         let label = UILabel()
         label.text = "Favourites"
-        label.textColor = .black
+        label.textColor = AppColor.black.uiColor
         label.font = UIFont.systemFont(ofSize: 22)
         return label
     }()
@@ -55,9 +55,9 @@ final class FavouritesController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        view.addSubview(favouritesLabel)
-        view.addSubview(signOutButton)
-        view.addSubview(tableView)
+        [favouritesLabel, tableView, signOutButton ].forEach {
+            contentView.addSubview($0)
+        }
     }
 
     // MARK: - setupConstraints

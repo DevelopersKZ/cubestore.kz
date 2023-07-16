@@ -15,7 +15,7 @@ final class EditProfileController: UIViewController {
     private lazy var profileLabel: UILabel = {
         let label = UILabel()
         label.text = "Profile"
-        label.textColor = .black
+        label.textColor = AppColor.black.uiColor
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textAlignment = .center
         return label
