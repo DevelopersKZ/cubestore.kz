@@ -49,14 +49,14 @@ final class FavouritesController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = .white
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
     
     private func setupViews() {
         [favouritesLabel, tableView, signOutButton ].forEach {
-            contentView.addSubview($0)
+            view.addSubview($0)
         }
     }
 
