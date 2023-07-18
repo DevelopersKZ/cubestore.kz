@@ -49,7 +49,7 @@ final class FavouritesController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
+        view.backgroundColor = AppColor.silver.uiColor  
     }
     
     // MARK: - setupViews
