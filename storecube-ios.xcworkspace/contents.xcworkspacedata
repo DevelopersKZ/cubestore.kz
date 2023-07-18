@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ravil/Desktop/storecube-ios/StoreCube.xcodeproj">
+      location = "group:/Users/ravil/Desktop/storecube-ios/CubeStore.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

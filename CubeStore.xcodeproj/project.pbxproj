@@ -79,7 +79,7 @@
 		F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		F134C20A2A6106B200E73121 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		F1E292E62A53EC14002C798A /* StoreCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E292E92A53EC14002C798A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E292EB2A53EC14002C798A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F1E292F22A53EC16002C798A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 		F1E292E72A53EC14002C798A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1E292E62A53EC14002C798A /* StoreCube.app */,
+				F1E292E62A53EC14002C798A /* CubeStore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,9 +277,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1E292E52A53EC14002C798A /* StoreCube */ = {
+		F1E292E52A53EC14002C798A /* CubeStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "StoreCube" */;
+			buildConfigurationList = F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */;
 			buildPhases = (
 				B658C3EEF3964AEB1BB61A85 /* [CP] Check Pods Manifest.lock */,
 				F1E292E22A53EC14002C798A /* Sources */,
@@ -291,9 +291,9 @@
 			);
 			dependencies = (
 			);
-			name = StoreCube;
+			name = CubeStore;
 			productName = "storecube-ios";
-			productReference = F1E292E62A53EC14002C798A /* StoreCube.app */;
+			productReference = F1E292E62A53EC14002C798A /* CubeStore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -311,7 +311,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1E292E12A53EC14002C798A /* Build configuration list for PBXProject "StoreCube" */;
+			buildConfigurationList = F1E292E12A53EC14002C798A /* Build configuration list for PBXProject "CubeStore" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -324,7 +324,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1E292E52A53EC14002C798A /* StoreCube */,
+				F1E292E52A53EC14002C798A /* CubeStore */,
 			);
 		};
 /* End PBXProject section */
@@ -613,7 +613,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1E292E12A53EC14002C798A /* Build configuration list for PBXProject "StoreCube" */ = {
+		F1E292E12A53EC14002C798A /* Build configuration list for PBXProject "CubeStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1E292F82A53EC16002C798A /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "StoreCube" */ = {
+		F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1E292FB2A53EC16002C798A /* Debug */,
