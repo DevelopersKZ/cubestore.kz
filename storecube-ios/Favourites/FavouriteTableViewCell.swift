@@ -56,11 +56,11 @@ final class FavouriteTableViewCell: UITableViewCell {
     // MARK: - setupViews
     
     private func setupViews() {
-        contentView.addSubview(productImageView)
-        contentView.addSubview(countLabel)
-        contentView.addSubview(productNameLabel)
-        contentView.addSubview(priceLabel)
+        [productImageView, countLabel, productNameLabel, priceLabel].forEach {
+            contentView.addSubview($0)
+        }
     }
+
     
     // MARK: - setupConstraints
     
