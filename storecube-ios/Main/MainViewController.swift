@@ -14,7 +14,10 @@ final class MainViewController: UIViewController {
     
     lazy var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 200, height: 200)
+        layout.itemSize = CGSize(width: 169, height: 191)
+        layout.scrollDirection = .vertical
+        layout.minimumLineSpacing = 16
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
         return layout
     }()
     
@@ -22,7 +25,7 @@ final class MainViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "main_id")
+        collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: "main_id")
         return collectionView
     }()
     
@@ -39,6 +42,7 @@ final class MainViewController: UIViewController {
     
     private func setupViews() {
         view.addSubview(mainCollectionView)
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints
@@ -51,12 +55,20 @@ final class MainViewController: UIViewController {
 }
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "main_id", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "main_id",
+            for: indexPath
+        ) as? MainCollectionViewCell else {
+            fatalError("Could not cast to MainCollectionViewCell")
+        }
+        cell.layer.cornerRadius = 14
+        cell.layer.masksToBounds = true
         return cell
     }
 }
