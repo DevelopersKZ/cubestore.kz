@@ -11,7 +11,6 @@
 		517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BA2A5D542B00620908 /* EditProfileController.swift */; };
 		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
 		517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */; };
-		51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8CB9A2A66C74C0012F424 /* ProfileController.swift */; };
 		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
 		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
 		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
@@ -53,7 +52,6 @@
 		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
 		517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewCell.swift; sourceTree = "<group>"; };
-		51B8CB9A2A66C74C0012F424 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
 		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,13 +134,6 @@
 			sourceTree = "<group>";
 		};
 		51B8CB992A66C72C0012F424 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				51B8CB9A2A66C74C0012F424 /* ProfileController.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		51D433A02A59760800CF019B /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,7 +278,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1E292E52A53EC14002C798A /* CubeStore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */;
 			buildPhases = (
@@ -418,14 +408,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E292EE2A53EC14002C798A /* ViewController.swift in Sources */,
 				517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */,
 				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
-				F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
+                F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
 				51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */,
 				F134C1E22A607C3200E73121 /* AppImage.swift in Sources */,
 				F134C1E02A60794100E73121 /* AppColor .swift in Sources */,
-				51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */,
 				51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */,
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
