@@ -60,6 +60,7 @@ final class FavouriteTableViewCell: UITableViewCell {
             contentView.addSubview($0)
         }
     }
+
     
     // MARK: - setupConstraints
     

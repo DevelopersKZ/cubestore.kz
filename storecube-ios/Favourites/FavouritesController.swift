@@ -33,11 +33,7 @@ final class FavouritesController: UIViewController {
         let button = UIButton()
         button.setTitle("SIGN OUT", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = UIColor(
-            red: CGFloat(0x93) / 255.0,
-            green: CGFloat(0xC2) / 255.0,
-            blue: CGFloat(0xFD) / 255.0,
-            alpha: 1.0)
+        button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
         return button
     }()

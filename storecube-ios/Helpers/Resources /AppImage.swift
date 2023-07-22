@@ -36,4 +36,11 @@ enum AppImage: String, AppImageProtocol {
     case coupon
     case carlDance
     case info
+    case profile
+    case orders
+    case user
+    case like
+    case offer
+    case settings
+    case delivery
 }
