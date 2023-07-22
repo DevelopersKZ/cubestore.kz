@@ -21,7 +21,7 @@ final class ProfileController: UIViewController {
     
     private lazy var profileMainLabel: UILabel = {
         let label = UILabel()
-        label.text = "User_2391"
+        label.text = "Radmir Telman"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont.boldSystemFont(ofSize: 28)
         label.textAlignment = .center
