@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ProfileController: UIViewController {
+final class ProfileController: UIViewController {
 
     // MARK: - UI
     
@@ -78,7 +78,8 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
-        return button    }()
+        return button
+    }()
     
     private lazy var deliveryButton: UIButton = {
         let button = UIButton(type: .system)
@@ -95,7 +96,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Orders"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -103,7 +104,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Profile"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -111,7 +112,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Favourites"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -119,7 +120,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Offers"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -127,7 +128,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Settings"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -135,7 +136,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Delivery"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -145,6 +146,7 @@ class ProfileController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
+        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 20)
         return button
     }()
     
@@ -155,7 +157,6 @@ class ProfileController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
@@ -164,9 +165,11 @@ class ProfileController: UIViewController {
         [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, deliveryLabel, signOutButton].forEach {
             view.addSubview($0)
         }
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints
+    
     private func setupConstraints() {
         profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(83)
