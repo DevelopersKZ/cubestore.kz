@@ -29,7 +29,7 @@ final class OffersController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
+        view.backgroundColor = .white
     }
     
     // MARK: - setupViews

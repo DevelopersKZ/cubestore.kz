@@ -33,7 +33,11 @@ final class FavouritesController: UIViewController {
         let button = UIButton()
         button.setTitle("SIGN OUT", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = AppColor.aqua.uiColor
+        button.backgroundColor = UIColor(
+            red: CGFloat(0x93) / 255.0,
+            green: CGFloat(0xC2) / 255.0,
+            blue: CGFloat(0xFD) / 255.0,
+            alpha: 1.0)
         button.layer.cornerRadius = 14
         return button
     }()
@@ -51,9 +55,9 @@ final class FavouritesController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [favouritesLabel, tableView, signOutButton ].forEach {
-            view.addSubview($0)
-        }
+        view.addSubview(favouritesLabel)
+        view.addSubview(signOutButton)
+        view.addSubview(tableView)
     }
 
     // MARK: - setupConstraints
