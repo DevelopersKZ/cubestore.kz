@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		515EF9492A545E3200557B80 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EF9482A545E3200557B80 /* SignInController.swift */; };
+		517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BA2A5D542B00620908 /* EditProfileController.swift */; };
+		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
+		517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */; };
+		51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8CB9A2A66C74C0012F424 /* ProfileController.swift */; };
+		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
+		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
+		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
+		F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1D42A60677800E73121 /* OnboardingController.swift */; };
+		F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */; };
+		F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F134C1DC2A60788000E73121 /* Colors.xcassets */; };
+		F134C1E02A60794100E73121 /* AppColor .swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1DF2A60794100E73121 /* AppColor .swift */; };
+		F134C1E22A607C3200E73121 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1E12A607C3200E73121 /* AppImage.swift */; };
+		F134C1F62A607D4C00E73121 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1E42A607D4B00E73121 /* Montserrat-ExtraLight.ttf */; };
+		F134C1F72A607D4C00E73121 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1E52A607D4B00E73121 /* Montserrat-Italic.ttf */; };
+		F134C1F82A607D4C00E73121 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1E62A607D4B00E73121 /* Montserrat-Regular.ttf */; };
+		F134C1F92A607D4C00E73121 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1E72A607D4B00E73121 /* Montserrat-ExtraBold.ttf */; };
+		F134C1FA2A607D4C00E73121 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1E82A607D4B00E73121 /* Montserrat-LightItalic.ttf */; };
+		F134C1FB2A607D4C00E73121 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1E92A607D4B00E73121 /* Montserrat-BoldItalic.ttf */; };
+		F134C1FC2A607D4C00E73121 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1EA2A607D4B00E73121 /* Montserrat-BlackItalic.ttf */; };
+		F134C1FD2A607D4C00E73121 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1EB2A607D4B00E73121 /* Montserrat-ThinItalic.ttf */; };
+		F134C1FE2A607D4C00E73121 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1EC2A607D4B00E73121 /* Montserrat-Medium.ttf */; };
+		F134C1FF2A607D4C00E73121 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1ED2A607D4B00E73121 /* Montserrat-ExtraLightItalic.ttf */; };
+		F134C2002A607D4C00E73121 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1EE2A607D4B00E73121 /* Montserrat-Bold.ttf */; };
+		F134C2012A607D4C00E73121 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1EF2A607D4B00E73121 /* Montserrat-Light.ttf */; };
+		F134C2022A607D4C00E73121 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F02A607D4B00E73121 /* Montserrat-Thin.ttf */; };
+		F134C2032A607D4C00E73121 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F12A607D4B00E73121 /* Montserrat-SemiBoldItalic.ttf */; };
+		F134C2042A607D4C00E73121 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F22A607D4B00E73121 /* Montserrat-MediumItalic.ttf */; };
+		F134C2052A607D4C00E73121 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */; };
+		F134C2062A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */; };
+		F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */; };
+		F134C20B2A6106B200E73121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F134C20A2A6106B200E73121 /* Main.storyboard */; };
+		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
+		F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292EB2A53EC14002C798A /* SceneDelegate.swift */; };
+		F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F22A53EC16002C798A /* Assets.xcassets */; };
+		F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */; };
+		F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292FE2A5427D1002C798A /* SignUpController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		205A888770ED476378838CC6 /* Pods_storecube_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_storecube_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.debug.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		515EF9482A545E3200557B80 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
+		517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewCell.swift; sourceTree = "<group>"; };
+		51B8CB9A2A66C74C0012F424 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
+		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
+		F134C1D42A60677800E73121 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F134C1DC2A60788000E73121 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F134C1DF2A60794100E73121 /* AppColor .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppColor .swift"; sourceTree = "<group>"; };
+		F134C1E12A607C3200E73121 /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		F134C1E42A607D4B00E73121 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F134C1E52A607D4B00E73121 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		F134C1E62A607D4B00E73121 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		F134C1E72A607D4B00E73121 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F134C1E82A607D4B00E73121 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		F134C1E92A607D4B00E73121 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F134C1EA2A607D4B00E73121 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F134C1EB2A607D4B00E73121 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F134C1EC2A607D4B00E73121 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		F134C1ED2A607D4B00E73121 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F134C1EE2A607D4B00E73121 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		F134C1EF2A607D4B00E73121 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		F134C1F02A607D4B00E73121 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		F134C1F12A607D4B00E73121 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F134C1F22A607D4B00E73121 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		F134C20A2A6106B200E73121 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E292E92A53EC14002C798A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1E292EB2A53EC14002C798A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1E292F22A53EC16002C798A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E292F52A53EC16002C798A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1E292F72A53EC16002C798A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E292FE2A5427D1002C798A /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1E292E32A53EC14002C798A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2553FF0F5F09CE789F3A4AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				205A888770ED476378838CC6 /* Pods_storecube_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		515EF9472A545DBC00557B80 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				515EF9482A545E3200557B80 /* SignInController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		517641B52A5D515A00620908 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				517641BA2A5D542B00620908 /* EditProfileController.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		517641BC2A5EE10400620908 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				517641BD2A5EE17200620908 /* OffersController.swift */,
+				517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		51B8CB992A66C72C0012F424 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				51B8CB9A2A66C74C0012F424 /* ProfileController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		51D433A02A59760800CF019B /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				51D433A12A5976D300CF019B /* FavouritesController.swift */,
+				51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		F134C1D32A60675D00E73121 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F134C1D42A60677800E73121 /* OnboardingController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F134C1D62A606E0300E73121 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F134C1DE2A60792200E73121 /* Resources  */,
+				F134C1D72A606E4C00E73121 /* Extensions  */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F134C1D72A606E4C00E73121 /* Extensions  */ = {
+			isa = PBXGroup;
+			children = (
+				F134C1D82A606E5800E73121 /* UIView+Extensions */,
+			);
+			path = "Extensions ";
+			sourceTree = "<group>";
+		};
+		F134C1D82A606E5800E73121 /* UIView+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */,
+			);
+			path = "UIView+Extensions";
+			sourceTree = "<group>";
+		};
+		F134C1DB2A60785500E73121 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				F1E292F22A53EC16002C798A /* Assets.xcassets */,
+				F134C1DC2A60788000E73121 /* Colors.xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		F134C1DE2A60792200E73121 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				F134C1E32A607CF500E73121 /* Fonts */,
+				F134C1DF2A60794100E73121 /* AppColor .swift */,
+				F134C1E12A607C3200E73121 /* AppImage.swift */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		F134C1E32A607CF500E73121 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */,
+				F134C1EA2A607D4B00E73121 /* Montserrat-BlackItalic.ttf */,
+				F134C1EE2A607D4B00E73121 /* Montserrat-Bold.ttf */,
+				F134C1E92A607D4B00E73121 /* Montserrat-BoldItalic.ttf */,
+				F134C1E72A607D4B00E73121 /* Montserrat-ExtraBold.ttf */,
+				F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */,
+				F134C1E42A607D4B00E73121 /* Montserrat-ExtraLight.ttf */,
+				F134C1ED2A607D4B00E73121 /* Montserrat-ExtraLightItalic.ttf */,
+				F134C1E52A607D4B00E73121 /* Montserrat-Italic.ttf */,
+				F134C1EF2A607D4B00E73121 /* Montserrat-Light.ttf */,
+				F134C1E82A607D4B00E73121 /* Montserrat-LightItalic.ttf */,
+				F134C1EC2A607D4B00E73121 /* Montserrat-Medium.ttf */,
+				F134C1F22A607D4B00E73121 /* Montserrat-MediumItalic.ttf */,
+				F134C1E62A607D4B00E73121 /* Montserrat-Regular.ttf */,
+				F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */,
+				F134C1F12A607D4B00E73121 /* Montserrat-SemiBoldItalic.ttf */,
+				F134C1F02A607D4B00E73121 /* Montserrat-Thin.ttf */,
+				F134C1EB2A607D4B00E73121 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F1E292DD2A53EC14002C798A = {
+			isa = PBXGroup;
+			children = (
+				F1E292E82A53EC14002C798A /* storecube-ios */,
+				F1E292E72A53EC14002C798A /* Products */,
+				FD86AA5D1C5997DEA7E9810C /* Pods */,
+				2553FF0F5F09CE789F3A4AC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1E292E72A53EC14002C798A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1E292E62A53EC14002C798A /* CubeStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E292E82A53EC14002C798A /* storecube-ios */ = {
+			isa = PBXGroup;
+			children = (
+				51B8CB992A66C72C0012F424 /* Profile */,
+				F1E292E92A53EC14002C798A /* AppDelegate.swift */,
+				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
+				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
+				F134C20A2A6106B200E73121 /* Main.storyboard */,
+				F1E292F72A53EC16002C798A /* Info.plist */,
+				F134C1DB2A60785500E73121 /* Resources  */,
+				F134C1D62A606E0300E73121 /* Helpers */,
+				F134C1D32A60675D00E73121 /* Onboarding */,
+				517641BC2A5EE10400620908 /* Offers */,
+				517641B52A5D515A00620908 /* EditProfile */,
+				51D433A02A59760800CF019B /* Favourites */,
+				515EF9472A545DBC00557B80 /* SignIn */,
+				F1E292FD2A5427A7002C798A /* SignUp */,
+			);
+			path = "storecube-ios";
+			sourceTree = "<group>";
+		};
+		F1E292FD2A5427A7002C798A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F1E292FE2A5427D1002C798A /* SignUpController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		FD86AA5D1C5997DEA7E9810C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */,
+				9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1E292E52A53EC14002C798A /* CubeStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */;
+			buildPhases = (
+				B658C3EEF3964AEB1BB61A85 /* [CP] Check Pods Manifest.lock */,
+				F1E292E22A53EC14002C798A /* Sources */,
+				F1E292E32A53EC14002C798A /* Frameworks */,
+				F1E292E42A53EC14002C798A /* Resources */,
+				7D84345C10735AA014C5DDC6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CubeStore;
+			productName = "storecube-ios";
+			productReference = F1E292E62A53EC14002C798A /* CubeStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1E292DE2A53EC14002C798A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F1E292E52A53EC14002C798A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F1E292E12A53EC14002C798A /* Build configuration list for PBXProject "CubeStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1E292DD2A53EC14002C798A;
+			productRefGroup = F1E292E72A53EC14002C798A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1E292E52A53EC14002C798A /* CubeStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1E292E42A53EC14002C798A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F134C2042A607D4C00E73121 /* Montserrat-MediumItalic.ttf in Resources */,
+				F134C2032A607D4C00E73121 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */,
+				F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */,
+				F134C1FD2A607D4C00E73121 /* Montserrat-ThinItalic.ttf in Resources */,
+				F134C20B2A6106B200E73121 /* Main.storyboard in Resources */,
+				F134C1F82A607D4C00E73121 /* Montserrat-Regular.ttf in Resources */,
+				F134C2012A607D4C00E73121 /* Montserrat-Light.ttf in Resources */,
+				F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */,
+				F134C1FC2A607D4C00E73121 /* Montserrat-BlackItalic.ttf in Resources */,
+				F134C2002A607D4C00E73121 /* Montserrat-Bold.ttf in Resources */,
+				F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */,
+				F134C1F72A607D4C00E73121 /* Montserrat-Italic.ttf in Resources */,
+				F134C1F92A607D4C00E73121 /* Montserrat-ExtraBold.ttf in Resources */,
+				F134C1F62A607D4C00E73121 /* Montserrat-ExtraLight.ttf in Resources */,
+				F134C2052A607D4C00E73121 /* Montserrat-SemiBold.ttf in Resources */,
+				F134C2022A607D4C00E73121 /* Montserrat-Thin.ttf in Resources */,
+				F134C1FE2A607D4C00E73121 /* Montserrat-Medium.ttf in Resources */,
+				F134C1FB2A607D4C00E73121 /* Montserrat-BoldItalic.ttf in Resources */,
+				F134C2062A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				F134C1FA2A607D4C00E73121 /* Montserrat-LightItalic.ttf in Resources */,
+				F134C1FF2A607D4C00E73121 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D84345C10735AA014C5DDC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-storecube-ios/Pods-storecube-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-storecube-ios/Pods-storecube-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-storecube-ios/Pods-storecube-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B658C3EEF3964AEB1BB61A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-storecube-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1E292E22A53EC14002C798A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */,
+				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
+				F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
+				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
+				51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */,
+				F134C1E22A607C3200E73121 /* AppImage.swift in Sources */,
+				F134C1E02A60794100E73121 /* AppColor .swift in Sources */,
+				51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */,
+				51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */,
+				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
+				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
+				517641BE2A5EE17200620908 /* OffersController.swift in Sources */,
+				517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */,
+				F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1E292F52A53EC16002C798A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1E292F82A53EC16002C798A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1E292F92A53EC16002C798A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1E292FB2A53EC16002C798A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AYN7H8VL2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "storecube-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.storecube-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1E292FC2A53EC16002C798A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AYN7H8VL2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "storecube-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.storecube-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E292E12A53EC14002C798A /* Build configuration list for PBXProject "CubeStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E292F82A53EC16002C798A /* Debug */,
+				F1E292F92A53EC16002C798A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E292FB2A53EC16002C798A /* Debug */,
+				F1E292FC2A53EC16002C798A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1E292DE2A53EC14002C798A /* Project object */;
+}
