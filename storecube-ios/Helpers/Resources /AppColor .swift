@@ -30,5 +30,4 @@ enum AppColor: String, AppColorProtocol {
     case silver
     case black
     case white
-    case lightGray
 }

@@ -65,12 +65,14 @@ final class EditProfileController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [profileLabel, nameTextField, emailTextField, phoneTextField, saveButton ].forEach {
-            view.addSubview($0)
-        }
+        view.addSubview(profileLabel)
+        view.addSubview(nameTextField)
+        view.addSubview(emailTextField)
+        view.addSubview(phoneTextField)
+        view.addSubview(saveButton)
     }
     
-    // MARK: - setupConstraints
+    // MARK - setupConstraints
     
     private func setupConstraints() {
         profileLabel.snp.makeConstraints { make in
