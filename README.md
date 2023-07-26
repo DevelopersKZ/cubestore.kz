@@ -10,8 +10,8 @@ iOS Application for СubeStore
 1. Clone the repo
 
 ```bash
-$ git clone https://github.com/iStartDevelopers/cubestore.kz
-$ cd cubestore.kz
+$ git clone https://github.com/RavaCommunity/cubestore.kz
+$ cd storecube-ios
 ```
 
 2. Install dependencies from [Cocoapods](https://cocoapods.org/)
@@ -20,7 +20,7 @@ $ cd cubestore.kz
 $ pod install
 ```
 
-3. Open the Xcode workspace at `CubeStore.xcworkspace` and run the app.
+3. Open the Xcode workspace at `storecube-ios.xcworkspace` and run the app.
 
 ## Dependencies
 
