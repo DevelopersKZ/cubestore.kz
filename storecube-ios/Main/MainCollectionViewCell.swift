@@ -10,6 +10,8 @@ import SnapKit
 
 final class MainCollectionViewCell: UICollectionViewCell {
     
+    static let reuseID = String(describing: MainCollectionViewCell.self)
+    
     // MARK: - UI
     
     private lazy var cubeView: UIView = {
@@ -22,8 +24,8 @@ final class MainCollectionViewCell: UICollectionViewCell {
     private lazy var cubeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = AppImage.cube.uiImage
-        imageView.layer.cornerRadius = 14 // Устанавливаем радиус для округления углов
-        imageView.layer.masksToBounds = true // Важно установить этот флаг, чтобы обрезать содержимое в пределах округления
+        imageView.layer.cornerRadius = 14
+        imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()

@@ -38,6 +38,8 @@
 		F134C2062A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */; };
 		F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */; };
 		F134C20B2A6106B200E73121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F134C20A2A6106B200E73121 /* Main.storyboard */; };
+		F14922182A714D3800A8B66E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */; };
+		F149221B2A714F3900A8B66E /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221A2A714F3900A8B66E /* SectionType.swift */; };
 		F18C00972A69312200A2A01E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00962A69312200A2A01E /* MainViewController.swift */; };
 		F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
@@ -81,6 +83,8 @@
 		F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		F134C20A2A6106B200E73121 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		F149221A2A714F3900A8B66E /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
 		F18C00962A69312200A2A01E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,11 +227,21 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F14922192A714F2E00A8B66E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F149221A2A714F3900A8B66E /* SectionType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F18C00952A6930F200A2A01E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F14922192A714F2E00A8B66E /* Model */,
 				F18C00962A69312200A2A01E /* MainViewController.swift */,
 				F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */,
+				F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -425,9 +439,11 @@
 				517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */,
 				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
 				F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
+				F149221B2A714F3900A8B66E /* SectionType.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
 				51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */,
 				F134C1E22A607C3200E73121 /* AppImage.swift in Sources */,
+				F14922182A714D3800A8B66E /* BannerCollectionViewCell.swift in Sources */,
 				F134C1E02A60794100E73121 /* AppColor .swift in Sources */,
 				F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */,
 				F18C00972A69312200A2A01E /* MainViewController.swift in Sources */,
