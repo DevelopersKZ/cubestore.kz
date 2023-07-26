@@ -20,6 +20,7 @@ final class MainViewController: UIViewController {
         collectionView.delegate = self
         collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.reuseID)
         collectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.reuseID)
+        collectionView.backgroundColor = .clear
         return collectionView
     }()
     
@@ -95,18 +96,19 @@ final class MainViewController: UIViewController {
         // Item
         let item = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .absolute(180)
+                widthDimension: .fractionalWidth(169),
+                heightDimension: .absolute(191)
             )
         )
-        item.contentInsets.trailing = 16
+        item.contentInsets.trailing = 20
         // Group
-        let group = NSCollectionLayoutGroup.vertical(
+        let group = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .absolute(236)
+                heightDimension: .absolute(180)
             ),
-            subitems: [item]
+            subitem: item,
+            count: 2
         )
         // Section
         let section = NSCollectionLayoutSection(group: group)
