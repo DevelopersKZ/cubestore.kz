@@ -16,7 +16,7 @@ final class BannerCollectionViewCell: UICollectionViewCell {
     
     private lazy var bannerImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "promo_1")
+        imageView.image = AppImage.bannerCube.uiImage
         return imageView
     }()
     

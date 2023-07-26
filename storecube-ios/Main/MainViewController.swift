@@ -101,7 +101,7 @@ final class MainViewController: UIViewController {
         )
         item.contentInsets.trailing = 16
         // Group
-        let group = NSCollectionLayoutGroup.horizontal(
+        let group = NSCollectionLayoutGroup.vertical(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
                 heightDimension: .absolute(236)
