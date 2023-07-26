@@ -11,6 +11,7 @@
 		517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BA2A5D542B00620908 /* EditProfileController.swift */; };
 		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
 		517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */; };
+        51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8CB9A2A66C74C0012F424 /* ProfileController.swift */; };
 		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
 		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
 		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
@@ -56,6 +57,7 @@
 		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
 		517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewCell.swift; sourceTree = "<group>"; };
+        51B8CB9A2A66C74C0012F424 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
 		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,14 @@
 			path = Offers;
 			sourceTree = "<group>";
 		};
+        51B8CB992A66C72C0012F424 /* Profile */ = {
+            isa = PBXGroup;
+            children = (
+                51B8CB9A2A66C74C0012F424 /* ProfileController.swift */,
+            );
+            path = Profile;
+            sourceTree = "<group>";
+        };
 		51D433A02A59760800CF019B /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +287,7 @@
 				F18C00952A6930F200A2A01E /* Main */,
 				F134C1D32A60675D00E73121 /* Onboarding */,
 				517641BC2A5EE10400620908 /* Offers */,
+                51B8CB992A66C72C0012F424 /* Profile */,
 				517641B52A5D515A00620908 /* EditProfile */,
 				51D433A02A59760800CF019B /* Favourites */,
 				515EF9472A545DBC00557B80 /* SignIn */,
