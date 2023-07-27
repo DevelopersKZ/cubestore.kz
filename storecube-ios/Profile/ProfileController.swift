@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class ProfileController: UIViewController {
+class ProfileController: UIViewController {
 
     // MARK: - UI
     
@@ -21,7 +21,7 @@ final class ProfileController: UIViewController {
     
     private lazy var profileMainLabel: UILabel = {
         let label = UILabel()
-        label.text = "Radmir Telman"
+        label.text = "User_2391"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont.boldSystemFont(ofSize: 28)
         label.textAlignment = .center
@@ -78,8 +78,7 @@ final class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
-        return button
-    }()
+        return button    }()
     
     private lazy var deliveryButton: UIButton = {
         let button = UIButton(type: .system)
@@ -96,7 +95,7 @@ final class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Orders"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     
@@ -104,7 +103,7 @@ final class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Profile"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     
@@ -112,7 +111,7 @@ final class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Favourites"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     
@@ -120,7 +119,7 @@ final class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Offers"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     
@@ -128,7 +127,7 @@ final class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Settings"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     
@@ -136,7 +135,7 @@ final class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Delivery"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 12)
+        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     
@@ -146,7 +145,6 @@ final class ProfileController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
-        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 20)
         return button
     }()
     
@@ -157,6 +155,7 @@ final class ProfileController: UIViewController {
         
         setupViews()
         setupConstraints()
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
@@ -165,11 +164,9 @@ final class ProfileController: UIViewController {
         [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, deliveryLabel, signOutButton].forEach {
             view.addSubview($0)
         }
-        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints
-    
     private func setupConstraints() {
         profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(83)

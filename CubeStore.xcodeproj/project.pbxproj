@@ -39,7 +39,11 @@
 		F134C2052A607D4C00E73121 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */; };
 		F134C2062A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */; };
 		F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */; };
-		F134C20B2A6106B200E73121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F134C20A2A6106B200E73121 /* Main.storyboard */; };
+		F14922182A714D3800A8B66E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */; };
+		F149221B2A714F3900A8B66E /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221A2A714F3900A8B66E /* SectionType.swift */; };
+		F149221F2A71613600A8B66E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221E2A71613600A8B66E /* ProfileController.swift */; };
+		F18C00972A69312200A2A01E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00962A69312200A2A01E /* MainViewController.swift */; };
+		F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
 		F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292EB2A53EC14002C798A /* SceneDelegate.swift */; };
 		F1E292F32A53EC16002C798A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E292F22A53EC16002C798A /* Assets.xcassets */; };
@@ -82,8 +86,12 @@
 		F134C1F32A607D4B00E73121 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		F134C1F42A607D4C00E73121 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		F134C1F52A607D4C00E73121 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
-		F134C20A2A6106B200E73121 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		F1E292E62A53EC14002C798A /* storecube-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storecube-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		F149221A2A714F3900A8B66E /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
+		F149221E2A71613600A8B66E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		F18C00962A69312200A2A01E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E292E92A53EC14002C798A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E292EB2A53EC14002C798A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F1E292F22A53EC16002C798A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -239,6 +247,33 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F14922192A714F2E00A8B66E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F149221A2A714F3900A8B66E /* SectionType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F149221D2A71611B00A8B66E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F149221E2A71613600A8B66E /* ProfileController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F18C00952A6930F200A2A01E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F14922192A714F2E00A8B66E /* Model */,
+				F18C00962A69312200A2A01E /* MainViewController.swift */,
+				F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */,
+				F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F1E292DD2A53EC14002C798A = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +287,7 @@
 		F1E292E72A53EC14002C798A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1E292E62A53EC14002C798A /* storecube-ios.app */,
+				F1E292E62A53EC14002C798A /* CubeStore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,13 +299,13 @@
 				F1E292E92A53EC14002C798A /* AppDelegate.swift */,
 				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
 				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
-				F134C20A2A6106B200E73121 /* Main.storyboard */,
 				F1E292F72A53EC16002C798A /* Info.plist */,
-				F134C1DB2A60785500E73121 /* Resources  */,
 				F134C1D62A606E0300E73121 /* Helpers */,
+				F134C1DB2A60785500E73121 /* Resources  */,
+				F18C00952A6930F200A2A01E /* Main */,
 				F134C1D32A60675D00E73121 /* Onboarding */,
 				517641BC2A5EE10400620908 /* Offers */,
-				51B8CB992A66C72C0012F424 /* Profile */,
+				F149221D2A71611B00A8B66E /* Profile */,
 				517641B52A5D515A00620908 /* EditProfile */,
 				51D433A02A59760800CF019B /* Favourites */,
 				515EF9472A545DBC00557B80 /* SignIn */,
@@ -299,9 +334,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1E292E52A53EC14002C798A /* storecube-ios */ = {
+		F1E292E52A53EC14002C798A /* CubeStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "storecube-ios" */;
+			buildConfigurationList = F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */;
 			buildPhases = (
 				B658C3EEF3964AEB1BB61A85 /* [CP] Check Pods Manifest.lock */,
 				F1E292E22A53EC14002C798A /* Sources */,
@@ -313,9 +348,9 @@
 			);
 			dependencies = (
 			);
-			name = "storecube-ios";
+			name = CubeStore;
 			productName = "storecube-ios";
-			productReference = F1E292E62A53EC14002C798A /* storecube-ios.app */;
+			productReference = F1E292E62A53EC14002C798A /* CubeStore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -349,7 +384,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1E292E52A53EC14002C798A /* storecube-ios */,
+				F1E292E52A53EC14002C798A /* CubeStore */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +399,6 @@
 				F1E292F62A53EC16002C798A /* LaunchScreen.storyboard in Resources */,
 				F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */,
 				F134C1FD2A607D4C00E73121 /* Montserrat-ThinItalic.ttf in Resources */,
-				F134C20B2A6106B200E73121 /* Main.storyboard in Resources */,
 				F134C1F82A607D4C00E73121 /* Montserrat-Regular.ttf in Resources */,
 				F134C2012A607D4C00E73121 /* Montserrat-Light.ttf in Resources */,
 				F134C2072A607D4C00E73121 /* Montserrat-Black.ttf in Resources */,
@@ -436,11 +470,15 @@
 				517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */,
 				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
 				F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
+				F149221B2A714F3900A8B66E /* SectionType.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
 				51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */,
+				F149221F2A71613600A8B66E /* ProfileController.swift in Sources */,
 				F134C1E22A607C3200E73121 /* AppImage.swift in Sources */,
+				F14922182A714D3800A8B66E /* BannerCollectionViewCell.swift in Sources */,
 				F134C1E02A60794100E73121 /* AppColor .swift in Sources */,
-				51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */,
+				F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */,
+				F18C00972A69312200A2A01E /* MainViewController.swift in Sources */,
 				51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */,
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
@@ -592,7 +630,6 @@
 				INFOPLIST_FILE = "storecube-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,7 +658,6 @@
 				INFOPLIST_FILE = "storecube-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -649,7 +685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "storecube-ios" */ = {
+		F1E292FA2A53EC16002C798A /* Build configuration list for PBXNativeTarget "CubeStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1E292FB2A53EC16002C798A /* Debug */,

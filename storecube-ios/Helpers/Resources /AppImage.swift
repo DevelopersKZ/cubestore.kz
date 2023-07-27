@@ -45,4 +45,5 @@ enum AppImage: String, AppImageProtocol {
     case delivery
     case ravil
     case radmir
+    case bannerCube
 }
