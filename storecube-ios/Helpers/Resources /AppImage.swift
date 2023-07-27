@@ -43,4 +43,6 @@ enum AppImage: String, AppImageProtocol {
     case offer
     case settings
     case delivery
+    case ravil
+    case radmir
 }
