@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class AboutController: UIViewController {
+final class AboutController: UIViewController {
 
     // MARK: - UI
     
