@@ -93,7 +93,7 @@ final class SignInController: UIViewController {
         button.addTarget(self, action: #selector(aboutButtonDidPress), for: .touchUpInside)
         return button
     }()
-    
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -168,6 +168,6 @@ final class SignInController: UIViewController {
     }
     
     @objc func aboutButtonDidPress() {
-        self.navigationController?.pushViewController(OffersController(), animated: true)
+        self.navigationController?.pushViewController(AboutController(), animated: true)
     }
 }

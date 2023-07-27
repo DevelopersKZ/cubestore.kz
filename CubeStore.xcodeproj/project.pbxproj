@@ -11,6 +11,8 @@
 		517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BA2A5D542B00620908 /* EditProfileController.swift */; };
 		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
 		517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */; };
+		51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5AE252A716CFF00A2991A /* AboutController.swift */; };
+		51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8CB9A2A66C74C0012F424 /* ProfileController.swift */; };
 		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
 		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
 		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
@@ -56,6 +58,8 @@
 		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
 		517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewCell.swift; sourceTree = "<group>"; };
+		51A5AE252A716CFF00A2991A /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		51B8CB9A2A66C74C0012F424 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
 		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,22 @@
 				517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */,
 			);
 			path = Offers;
+			sourceTree = "<group>";
+		};
+		51A5AE242A716CC200A2991A /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				51A5AE252A716CFF00A2991A /* AboutController.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		51B8CB992A66C72C0012F424 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				51B8CB9A2A66C74C0012F424 /* ProfileController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		51D433A02A59760800CF019B /* Favourites */ = {
@@ -275,6 +295,7 @@
 		F1E292E82A53EC14002C798A /* storecube-ios */ = {
 			isa = PBXGroup;
 			children = (
+				51A5AE242A716CC200A2991A /* AboutUs */,
 				F1E292E92A53EC14002C798A /* AppDelegate.swift */,
 				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
 				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
@@ -356,6 +377,9 @@
 				Base,
 			);
 			mainGroup = F1E292DD2A53EC14002C798A;
+			packageReferences = (
+				51A5AE232A6EC20400A2991A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F1E292E72A53EC14002C798A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -458,6 +482,7 @@
 				51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */,
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
+				51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */,
 				517641BE2A5EE17200620908 /* OffersController.swift in Sources */,
 				517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */,
 				F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */,
@@ -670,6 +695,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51A5AE232A6EC20400A2991A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = F1E292DE2A53EC14002C798A /* Project object */;
 }
