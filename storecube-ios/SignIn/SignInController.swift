@@ -90,17 +90,10 @@ final class SignInController: UIViewController {
     private lazy var aboutButton: UIButton = {
         let button = UIButton()
         button.setImage(AppImage.info.uiImage, for: .normal)
-        button.addTarget(self, action: #selector(aboutButtonDidPress(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(aboutButtonDidPress), for: .touchUpInside)
         return button
     }()
 
-    @objc private func aboutButtonDidPress(_ sender: UIButton) {
-        if sender == aboutButton {
-            self.navigationController?.pushViewController(AboutController(), animated: true)
-        }
-    }
-
-    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -175,6 +168,6 @@ final class SignInController: UIViewController {
     }
     
     @objc func aboutButtonDidPress() {
-        self.navigationController?.pushViewController(OffersController(), animated: true)
+        self.navigationController?.pushViewController(AboutController(), animated: true)
     }
 }
