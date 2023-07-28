@@ -155,7 +155,6 @@ class ProfileController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
@@ -164,6 +163,7 @@ class ProfileController: UIViewController {
         [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, deliveryLabel, signOutButton].forEach {
             view.addSubview($0)
         }
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints

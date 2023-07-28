@@ -101,7 +101,6 @@ final class SignInController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
@@ -110,6 +109,7 @@ final class SignInController: UIViewController {
         [imageCarl, signUpLabel, emailTextField, passwordTextField, signUpButton, helpRegisterLabel, helpRegisterButton, aboutButton].forEach {
             view.addSubview($0)
         }
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints

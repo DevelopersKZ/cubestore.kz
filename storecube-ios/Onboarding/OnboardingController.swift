@@ -70,7 +70,6 @@ final class OnboardingController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
     }
     
     override func viewDidLayoutSubviews() {
@@ -87,6 +86,7 @@ final class OnboardingController: UIViewController {
         [titleLabel, subtitleLabel, continueButton].forEach {
             welcomeView.addSubview($0)
         }
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     private func cornerRadius() {
