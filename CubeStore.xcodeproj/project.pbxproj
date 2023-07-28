@@ -14,7 +14,7 @@
 		51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5AE252A716CFF00A2991A /* AboutController.swift */; };
 		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
 		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
-		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
+		7952E6FCA9A6DBA62D4F8E47 /* Pods_CubeStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39A626F08E49E62BE89499 /* Pods_CubeStore.framework */; };
 		F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1D42A60677800E73121 /* OnboardingController.swift */; };
 		F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */; };
 		F134C1DD2A60788000E73121 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F134C1DC2A60788000E73121 /* Colors.xcassets */; };
@@ -52,7 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		205A888770ED476378838CC6 /* Pods_storecube_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_storecube_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.debug.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		515EF9482A545E3200557B80 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
@@ -61,7 +60,9 @@
 		51A5AE252A716CFF00A2991A /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
 		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		5F39A626F08E49E62BE89499 /* Pods_CubeStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CubeStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DA8C8E4F33479192F20C6623 /* Pods-CubeStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CubeStore.release.xcconfig"; path = "Target Support Files/Pods-CubeStore/Pods-CubeStore.release.xcconfig"; sourceTree = "<group>"; };
 		F134C1D42A60677800E73121 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		F134C1D92A606E6C00E73121 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F134C1DC2A60788000E73121 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		F1E292F52A53EC16002C798A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E292F72A53EC16002C798A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1E292FE2A5427D1002C798A /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		FF70399D5265DAF8E22CFEB9 /* Pods-CubeStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CubeStore.debug.xcconfig"; path = "Target Support Files/Pods-CubeStore/Pods-CubeStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */,
+				7952E6FCA9A6DBA62D4F8E47 /* Pods_CubeStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +117,7 @@
 		2553FF0F5F09CE789F3A4AC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				205A888770ED476378838CC6 /* Pods_storecube_ios.framework */,
+				5F39A626F08E49E62BE89499 /* Pods_CubeStore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,6 +330,8 @@
 			children = (
 				3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */,
 				9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */,
+				FF70399D5265DAF8E22CFEB9 /* Pods-CubeStore.debug.xcconfig */,
+				DA8C8E4F33479192F20C6623 /* Pods-CubeStore.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -379,7 +383,7 @@
 			);
 			mainGroup = F1E292DD2A53EC14002C798A;
 			packageReferences = (
-				51A5AE232A6EC20400A2991A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				51A5AE232A6EC20400A2991A /* XCRemoteSwiftPackageReference "SnapKit.git" */,
 			);
 			productRefGroup = F1E292E72A53EC14002C798A /* Products */;
 			projectDirPath = "";
@@ -428,15 +432,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-storecube-ios/Pods-storecube-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CubeStore/Pods-CubeStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-storecube-ios/Pods-storecube-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CubeStore/Pods-CubeStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-storecube-ios/Pods-storecube-ios-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CubeStore/Pods-CubeStore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B658C3EEF3964AEB1BB61A85 /* [CP] Check Pods Manifest.lock */ = {
@@ -454,7 +458,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-storecube-ios-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CubeStore-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -621,7 +625,7 @@
 		};
 		F1E292FB2A53EC16002C798A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */;
+			baseConfigurationReference = FF70399D5265DAF8E22CFEB9 /* Pods-CubeStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -649,7 +653,7 @@
 		};
 		F1E292FC2A53EC16002C798A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */;
+			baseConfigurationReference = DA8C8E4F33479192F20C6623 /* Pods-CubeStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -699,7 +703,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		51A5AE232A6EC20400A2991A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		51A5AE232A6EC20400A2991A /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {

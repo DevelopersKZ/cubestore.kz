@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'storecube-ios' do
+target 'CubeStore' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for storecube-ios
+  # Pods for CubeStore
 
   pod 'SnapKit', '5.6.0'
 
