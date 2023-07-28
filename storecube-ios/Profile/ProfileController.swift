@@ -67,6 +67,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(offersButtonDidPress), for: .touchUpInside)
         return button
     }()
     
@@ -82,7 +83,7 @@ class ProfileController: UIViewController {
     
     private lazy var deliveryButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = AppImage.delivery.uiImage
+        let image = AppImage.about.uiImage
         button.setImage(image, for: .normal)
         button.backgroundColor = AppColor.silver.uiColor
         button.layer.cornerRadius = 26
@@ -131,9 +132,9 @@ class ProfileController: UIViewController {
         return label
     }()
     
-    private lazy var deliveryLabel: UILabel = {
+    private lazy var aboutLabel: UILabel = {
         let label = UILabel()
-        label.text = "Delivery"
+        label.text = "About us"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
@@ -142,7 +143,8 @@ class ProfileController: UIViewController {
     private lazy var signOutButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("SIGN OUT", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(AppColor.black.uiColor, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
         return button
@@ -160,13 +162,14 @@ class ProfileController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, deliveryLabel, signOutButton].forEach {
+        [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, aboutLabel, signOutButton].forEach {
             view.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints
+    
     private func setupConstraints() {
         profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(83)
@@ -213,7 +216,7 @@ class ProfileController: UIViewController {
         
         favouriteLabel.snp.makeConstraints() { make in
             make.top.equalTo(favouritesButton.snp.bottom).offset(5)
-            make.leading.equalTo(profileButton.snp.trailing).offset(45)
+            make.leading.equalTo(profileButton.snp.trailing).offset(47)
             make.trailing.equalToSuperview().offset(-55)
         }
         
@@ -226,7 +229,7 @@ class ProfileController: UIViewController {
         
         offersLabel.snp.makeConstraints() { make in
             make.top.equalTo(offersButton.snp.bottom).offset(5)
-            make.leading.equalToSuperview().offset(70)
+            make.leading.equalToSuperview().offset(69)
             make.trailing.equalTo(profileMainLabel.snp.trailing).offset(-160)
         }
         
@@ -248,9 +251,9 @@ class ProfileController: UIViewController {
             make.size.equalTo(70)
         }
         
-        deliveryLabel.snp.makeConstraints() { make in
+        aboutLabel.snp.makeConstraints() { make in
             make.top.equalTo(deliveryButton.snp.bottom).offset(5)
-            make.leading.equalTo(settingsButton.snp.trailing).offset(52)
+            make.leading.equalTo(settingsButton.snp.trailing).offset(48)
             make.trailing.equalToSuperview().offset(-55)
         }
         
@@ -260,5 +263,11 @@ class ProfileController: UIViewController {
             make.trailing.equalToSuperview().offset(-20)
             make.height.equalTo(53)
         }
+    }
+    
+    // MARK: - Actions
+    
+    @objc func offersButtonDidPress() {
+        self.navigationController?.pushViewController(OffersController(), animated: true)
     }
 }

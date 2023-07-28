@@ -57,7 +57,7 @@ enum AppImage: String, AppImageProtocol {
     case like
     case offer
     case settings
-    case delivery
+    case about
     
     // MARK: - About
     
