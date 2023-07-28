@@ -30,12 +30,27 @@ extension AppImageProtocol {
 }
 
 enum AppImage: String, AppImageProtocol {
+    
+    // MARK: - AppImage
+    
     case cube
     case cubeCarl
     case jimmyDog
     case coupon
     case carlDance
     case info
+    case bannerCube
+    
+    // MARK: - TabBar
+    
+    case heart
+    case home
+    case search
+    case shoppingbag
+    case userTab
+    
+    // MARK: - Profile
+    
     case profile
     case orders
     case user
@@ -43,7 +58,10 @@ enum AppImage: String, AppImageProtocol {
     case offer
     case settings
     case delivery
+    
+    // MARK: - About
+    
     case ravil
     case radmir
-    case bannerCube
+    
 }
