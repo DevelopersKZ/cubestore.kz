@@ -80,6 +80,8 @@ final class FormController: UIViewController {
         button.setTitle("ORDER", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
+        button.setTitleColor(AppColor.black.uiColor, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
         button.layer.cornerRadius = 14
         return button
     }()
