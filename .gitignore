@@ -6,3 +6,5 @@ CubeStore.xcworkspace/xcuserdata/ravil.xcuserdatad/UserInterfaceState.xcuserstat
 .DS_Store
 CubeStore.xcworkspace/xcuserdata/ravil.xcuserdatad/xcschemes/xcschememanagement.plist
 CubeStore.xcodeproj/xcuserdata/ravil.xcuserdatad/xcschemes/xcschememanagement.plist
+*.plist
+*.xcuserstate
