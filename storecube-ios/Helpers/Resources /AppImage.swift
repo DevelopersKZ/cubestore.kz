@@ -65,4 +65,8 @@ enum AppImage: String, AppImageProtocol {
     case ravil
     case radmir
     
+    // MARK: - LaunchScreen
+    
+    case rubikLaunchScreen
+    
 }

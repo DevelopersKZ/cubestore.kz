@@ -84,7 +84,7 @@ final class MainViewController: UIViewController {
         section.contentInsets = NSDirectionalEdgeInsets(
             top: 0,
             leading: 16,
-            bottom: 40,
+            bottom: 15,
             trailing: 16
         )
         section.orthogonalScrollingBehavior = .continuous
@@ -116,8 +116,8 @@ final class MainViewController: UIViewController {
         section.contentInsets = NSDirectionalEdgeInsets(
             top: 0,
             leading: 16,
-            bottom: 20,
-            trailing: 0
+            bottom: 10,
+            trailing: -16
         )
         section.boundarySupplementaryItems = [supplementaryHeaderItem()]
         return section
