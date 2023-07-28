@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_storecube_iosVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_storecube_iosVersionString[];
+FOUNDATION_EXPORT double Pods_CubeStoreVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CubeStoreVersionString[];
 
