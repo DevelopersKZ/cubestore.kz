@@ -12,7 +12,6 @@
 		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
 		517641C02A5FE96B00620908 /* CouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */; };
 		51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5AE252A716CFF00A2991A /* AboutController.swift */; };
-		51B8CB9B2A66C74C0012F424 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8CB9A2A66C74C0012F424 /* ProfileController.swift */; };
 		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
 		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
 		C9E80B1D80FC81DB6C353C3D /* Pods_storecube_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205A888770ED476378838CC6 /* Pods_storecube_ios.framework */; };
@@ -42,6 +41,7 @@
 		F14922182A714D3800A8B66E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */; };
 		F149221B2A714F3900A8B66E /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221A2A714F3900A8B66E /* SectionType.swift */; };
 		F149221F2A71613600A8B66E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221E2A71613600A8B66E /* ProfileController.swift */; };
+		F14922222A7384A000A8B66E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922212A7384A000A8B66E /* TabBarController.swift */; };
 		F18C00972A69312200A2A01E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00962A69312200A2A01E /* MainViewController.swift */; };
 		F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
@@ -59,7 +59,6 @@
 		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
 		517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewCell.swift; sourceTree = "<group>"; };
 		51A5AE252A716CFF00A2991A /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
-		51B8CB9A2A66C74C0012F424 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
 		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		9EAC1E4F34729BF42668CE9E /* Pods-storecube-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.release.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		F149221A2A714F3900A8B66E /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
 		F149221E2A71613600A8B66E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		F14922212A7384A000A8B66E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F18C00962A69312200A2A01E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,14 +151,6 @@
 				51A5AE252A716CFF00A2991A /* AboutController.swift */,
 			);
 			path = AboutUs;
-			sourceTree = "<group>";
-		};
-		51B8CB992A66C72C0012F424 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				51B8CB9A2A66C74C0012F424 /* ProfileController.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		51D433A02A59760800CF019B /* Favourites */ = {
@@ -263,6 +255,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		F14922202A73847E00A8B66E /* MainTabBar  */ = {
+			isa = PBXGroup;
+			children = (
+				F14922212A7384A000A8B66E /* TabBarController.swift */,
+			);
+			path = "MainTabBar ";
+			sourceTree = "<group>";
+		};
 		F18C00952A6930F200A2A01E /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,7 +295,6 @@
 		F1E292E82A53EC14002C798A /* storecube-ios */ = {
 			isa = PBXGroup;
 			children = (
-				51A5AE242A716CC200A2991A /* AboutUs */,
 				F1E292E92A53EC14002C798A /* AppDelegate.swift */,
 				F1E292EB2A53EC14002C798A /* SceneDelegate.swift */,
 				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
@@ -303,6 +302,7 @@
 				F134C1D62A606E0300E73121 /* Helpers */,
 				F134C1DB2A60785500E73121 /* Resources  */,
 				F18C00952A6930F200A2A01E /* Main */,
+				F14922202A73847E00A8B66E /* MainTabBar  */,
 				F134C1D32A60675D00E73121 /* Onboarding */,
 				517641BC2A5EE10400620908 /* Offers */,
 				F149221D2A71611B00A8B66E /* Profile */,
@@ -310,6 +310,7 @@
 				51D433A02A59760800CF019B /* Favourites */,
 				515EF9472A545DBC00557B80 /* SignIn */,
 				F1E292FD2A5427A7002C798A /* SignUp */,
+				51A5AE242A716CC200A2991A /* AboutUs */,
 			);
 			path = "storecube-ios";
 			sourceTree = "<group>";
@@ -480,6 +481,7 @@
 				F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */,
 				F18C00972A69312200A2A01E /* MainViewController.swift in Sources */,
 				51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */,
+				F14922222A7384A000A8B66E /* TabBarController.swift in Sources */,
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
 				51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */,
