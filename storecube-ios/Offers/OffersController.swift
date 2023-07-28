@@ -29,13 +29,13 @@ final class OffersController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupViews
     
     private func setupViews() {
         view.addSubview(tableView)
+        view.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints
