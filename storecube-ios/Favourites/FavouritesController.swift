@@ -49,7 +49,6 @@ final class FavouritesController: UIViewController {
         
         setupViews()
         setupConstraints()
-        view.backgroundColor = AppColor.silver.uiColor  
     }
     
     // MARK: - setupViews
@@ -58,6 +57,7 @@ final class FavouritesController: UIViewController {
         [favouritesLabel, tableView, signOutButton ].forEach {
             view.addSubview($0)
         }
+        view.backgroundColor = AppColor.silver.uiColor
     }
 
     // MARK: - setupConstraints

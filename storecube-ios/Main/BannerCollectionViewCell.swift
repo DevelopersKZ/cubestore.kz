@@ -36,6 +36,7 @@ final class BannerCollectionViewCell: UICollectionViewCell {
     
     private func setupViews() {
         contentView.addSubview(bannerImageView)
+        contentView.backgroundColor = AppColor.silver.uiColor
     }
     
     // MARK: - setupConstraints
