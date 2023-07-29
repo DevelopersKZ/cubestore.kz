@@ -40,15 +40,12 @@ final class EditProfileController: UIViewController {
     }()
     
     private lazy var saveButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Save   ", for: .normal)
+        let button = UIButton(type: .system)
+        button.setTitle("Save", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = UIColor(
-            red: CGFloat(0x93) / 255.0,
-            green: CGFloat(0xC2) / 255.0,
-            blue: CGFloat(0xFD) / 255.0,
-            alpha: 1.0)
+        button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
         return button
     }()
     

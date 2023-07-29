@@ -23,7 +23,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Radmir"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.boldSystemFont(ofSize: 28)
+        label.font = UIFont(name: "Montserrat-Bold", size: 28)
         label.textAlignment = .center
         return label
     }()
@@ -47,7 +47,6 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
-        button.addTarget(self, action: #selector(profileButtonDidPressed), for: .touchUpInside)
         return button
     }()
     
@@ -98,7 +97,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Orders"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -106,7 +105,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Profile"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -114,7 +113,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Favourites"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -122,7 +121,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Offers"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -130,7 +129,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "Settings"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -138,7 +137,7 @@ class ProfileController: UIViewController {
         let label = UILabel()
         label.text = "About us"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
     
@@ -148,6 +147,7 @@ class ProfileController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
         return button
     }()
     
@@ -256,11 +256,4 @@ class ProfileController: UIViewController {
             make.height.equalTo(53)
         }
     }
-    
-    // MARK: - Actions
-    
-    @objc private func profileButtonDidPressed() {
-        self.navigationController?.pushViewController(EditProfileController(), animated: true)
-    }
-    
 }

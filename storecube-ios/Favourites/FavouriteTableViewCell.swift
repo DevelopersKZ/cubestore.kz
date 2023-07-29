@@ -21,21 +21,21 @@ final class FavouriteTableViewCell: UITableViewCell {
     private lazy var countLabel: UILabel = {
         let label = UILabel()
         label.text = "1 x"
-        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label
     }()
         
     private lazy var productNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Yulong v2 M 3x3"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont(name: "Montserrat-Medium", size: 20)
         return label
     }()
 
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.text = "10$"
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = UIFont(name: "Montserrat-Regular", size: 16)
         return label
     }()
     
