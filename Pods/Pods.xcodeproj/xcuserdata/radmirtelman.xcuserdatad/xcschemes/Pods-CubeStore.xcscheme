@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C36625137E267D2C5C674E91DEEE9E81"
-               BuildableName = "Pods_storecube_ios.framework"
-               BlueprintName = "Pods-storecube-ios"
+               BlueprintIdentifier = "3B232DDF24D76A90C1FEB797E4FF1904"
+               BuildableName = "Pods_CubeStore.framework"
+               BlueprintName = "Pods-CubeStore"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
