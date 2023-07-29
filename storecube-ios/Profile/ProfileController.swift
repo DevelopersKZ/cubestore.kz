@@ -80,9 +80,9 @@ class ProfileController: UIViewController {
         button.layer.borderColor = AppColor.lightGray.cgColor
         return button    }()
     
-    private lazy var deliveryButton: UIButton = {
+    private lazy var aboutButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = AppImage.delivery.uiImage
+        let image = AppImage.about.uiImage
         button.setImage(image, for: .normal)
         button.backgroundColor = AppColor.silver.uiColor
         button.layer.cornerRadius = 26
@@ -131,9 +131,9 @@ class ProfileController: UIViewController {
         return label
     }()
     
-    private lazy var deliveryLabel: UILabel = {
+    private lazy var aboutLabel: UILabel = {
         let label = UILabel()
-        label.text = "Delivery"
+        label.text = "About us"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
@@ -160,7 +160,7 @@ class ProfileController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, deliveryLabel, signOutButton].forEach {
+        [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, aboutButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, aboutLabel, signOutButton].forEach {
             view.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
@@ -241,15 +241,15 @@ class ProfileController: UIViewController {
             make.centerX.equalToSuperview()
         }
         
-        deliveryButton.snp.makeConstraints() { make in
+        aboutButton.snp.makeConstraints() { make in
             make.top.equalTo(favouritesButton.snp.bottom).offset(40)
             make.leading.equalTo(profileButton.snp.trailing).offset(40)
             make.trailing.equalToSuperview().offset(-53)
             make.size.equalTo(70)
         }
         
-        deliveryLabel.snp.makeConstraints() { make in
-            make.top.equalTo(deliveryButton.snp.bottom).offset(5)
+        aboutLabel.snp.makeConstraints() { make in
+            make.top.equalTo(aboutButton.snp.bottom).offset(5)
             make.leading.equalTo(settingsButton.snp.trailing).offset(52)
             make.trailing.equalToSuperview().offset(-55)
         }
