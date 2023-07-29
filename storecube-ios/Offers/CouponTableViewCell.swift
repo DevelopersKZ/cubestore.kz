@@ -22,7 +22,7 @@ final class CouponTableViewCell: UITableViewCell {
     private lazy var percentLabel: UILabel = {
         let label = UILabel()
         label.text = "30\n%"
-        label.font = UIFont.boldSystemFont(ofSize: 42)
+        label.font = UIFont(name: "Montserrat-Bold", size: 42)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -31,14 +31,14 @@ final class CouponTableViewCell: UITableViewCell {
     private lazy var saleLabel: UILabel = {
         let label = UILabel()
         label.text = "Sale OFF"
-        label.font = UIFont.boldSystemFont(ofSize: 28)
+        label.font = UIFont(name: "Montserrat-Bold", size: 28)
         return label
     }()
     
     private lazy var timeLabel: UILabel = {
         let label = UILabel()
         label.text = "7 days left"
-        label.font = UIFont.systemFont(ofSize: 18, weight: .light)
+        label.font = UIFont(name: "Montserrat-Regular", size: 18)
         return label
     }()
     
@@ -48,6 +48,7 @@ final class CouponTableViewCell: UITableViewCell {
         button.tintColor = AppColor.aqua.uiColor
         button.backgroundColor = AppColor.black.uiColor
         button.layer.cornerRadius = 14
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
         return button
     }()
 

@@ -81,7 +81,7 @@ final class SignInController: UIViewController {
         button.setTitle("Register", for: .normal)
         button.setTitleColor(AppColor.aqua.uiColor, for: .normal)
         button.layer.cornerRadius = 20
-        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 20)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
         button.titleLabel?.attributedText = NSAttributedString(string: "Register", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
         button.addTarget(self, action: #selector(registerHelpButtonDidPress), for: .touchUpInside)
         return button
