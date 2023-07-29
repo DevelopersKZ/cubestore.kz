@@ -21,7 +21,7 @@ class ProfileController: UIViewController {
     
     private lazy var profileMainLabel: UILabel = {
         let label = UILabel()
-        label.text = "User_2391"
+        label.text = "Radmir"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont.boldSystemFont(ofSize: 28)
         label.textAlignment = .center
@@ -32,8 +32,10 @@ class ProfileController: UIViewController {
         let button = UIButton(type: .system)
         let image = AppImage.orders.uiImage
         button.setImage(image, for: .normal)
-        button.backgroundColor = AppColor.aqua.uiColor
+        button.backgroundColor = AppColor.silver.uiColor
         button.layer.cornerRadius = 26
+        button.layer.borderWidth = 2.0
+        button.layer.borderColor = AppColor.lightGray.cgColor
         return button
     }()
     
@@ -45,6 +47,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(profileButtonDidPressed), for: .touchUpInside)
         return button
     }()
     
@@ -80,9 +83,9 @@ class ProfileController: UIViewController {
         button.layer.borderColor = AppColor.lightGray.cgColor
         return button    }()
     
-    private lazy var deliveryButton: UIButton = {
+    private lazy var aboutButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = AppImage.delivery.uiImage
+        let image = AppImage.location.uiImage
         button.setImage(image, for: .normal)
         button.backgroundColor = AppColor.silver.uiColor
         button.layer.cornerRadius = 26
@@ -131,9 +134,9 @@ class ProfileController: UIViewController {
         return label
     }()
     
-    private lazy var deliveryLabel: UILabel = {
+    private lazy var aboutLabel: UILabel = {
         let label = UILabel()
-        label.text = "Delivery"
+        label.text = "About us"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         return label
@@ -160,7 +163,7 @@ class ProfileController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, deliveryButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, deliveryLabel, signOutButton].forEach {
+        [profileImageView, profileMainLabel, ordersButton, profileButton, favouritesButton, offersButton, settingsButton, aboutButton, ordersLabel, profileLabel, favouriteLabel, offersLabel, settingsLabel, aboutLabel, signOutButton].forEach {
             view.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
@@ -172,25 +175,23 @@ class ProfileController: UIViewController {
             make.top.equalToSuperview().offset(83)
             make.leading.equalToSuperview().offset(111)
             make.trailing.equalToSuperview().offset(-111)
+            make.centerX.equalToSuperview()
         }
         
         profileMainLabel.snp.makeConstraints() { make in
-            make.top.equalTo(profileImageView.snp.bottom).offset(22)
-            make.leading.equalToSuperview().offset(111)
-            make.trailing.equalToSuperview().offset(-111)
+            make.top.equalTo(profileImageView.snp.bottom).offset(40)
+            make.centerX.equalTo(profileImageView.snp.centerX)
         }
         
         ordersButton.snp.makeConstraints() { make in
             make.top.equalTo(profileMainLabel.snp.bottom).offset(22)
             make.leading.equalToSuperview().offset(53)
-            make.trailing.equalTo(profileMainLabel.snp.trailing).offset(-160)
             make.size.equalTo(70)
         }
         
         ordersLabel.snp.makeConstraints() { make in
             make.top.equalTo(ordersButton.snp.bottom).offset(5)
-            make.leading.equalToSuperview().offset(67)
-            make.trailing.equalTo(profileMainLabel.snp.trailing).offset(-160)
+            make.centerX.equalTo(ordersButton.snp.centerX)
         }
         
         profileButton.snp.makeConstraints() { make in
@@ -201,33 +202,29 @@ class ProfileController: UIViewController {
         
         profileLabel.snp.makeConstraints() {make in
             make.top.equalTo(profileButton.snp.bottom).offset(5)
-            make.centerX.equalToSuperview()
+            make.centerX.equalTo(profileButton.snp.centerX)
         }
         
         favouritesButton.snp.makeConstraints() { make in
             make.top.equalTo(profileMainLabel.snp.bottom).offset(22)
-            make.leading.equalTo(profileButton.snp.trailing).offset(40)
             make.trailing.equalToSuperview().offset(-53)
             make.size.equalTo(70)
         }
         
         favouriteLabel.snp.makeConstraints() { make in
             make.top.equalTo(favouritesButton.snp.bottom).offset(5)
-            make.leading.equalTo(profileButton.snp.trailing).offset(45)
-            make.trailing.equalToSuperview().offset(-55)
+            make.centerX.equalTo(favouritesButton.snp.centerX)
         }
         
         offersButton.snp.makeConstraints() { make in
             make.top.equalTo(ordersButton.snp.bottom).offset(40)
             make.leading.equalToSuperview().offset(50)
-            make.trailing.equalTo(profileMainLabel.snp.trailing).offset(-160)
             make.size.equalTo(70)
         }
         
         offersLabel.snp.makeConstraints() { make in
             make.top.equalTo(offersButton.snp.bottom).offset(5)
-            make.leading.equalToSuperview().offset(70)
-            make.trailing.equalTo(profileMainLabel.snp.trailing).offset(-160)
+            make.centerX.equalTo(offersButton.snp.centerX)
         }
         
         settingsButton.snp.makeConstraints() { make in
@@ -238,20 +235,18 @@ class ProfileController: UIViewController {
         
         settingsLabel.snp.makeConstraints() { make in
             make.top.equalTo(settingsButton.snp.bottom).offset(5)
-            make.centerX.equalToSuperview()
+            make.centerX.equalTo(settingsButton.snp.centerX)
         }
         
-        deliveryButton.snp.makeConstraints() { make in
+        aboutButton.snp.makeConstraints() { make in
             make.top.equalTo(favouritesButton.snp.bottom).offset(40)
-            make.leading.equalTo(profileButton.snp.trailing).offset(40)
             make.trailing.equalToSuperview().offset(-53)
             make.size.equalTo(70)
         }
         
-        deliveryLabel.snp.makeConstraints() { make in
-            make.top.equalTo(deliveryButton.snp.bottom).offset(5)
-            make.leading.equalTo(settingsButton.snp.trailing).offset(52)
-            make.trailing.equalToSuperview().offset(-55)
+        aboutLabel.snp.makeConstraints() { make in
+            make.top.equalTo(aboutButton.snp.bottom).offset(5)
+            make.centerX.equalTo(aboutButton.snp.centerX)
         }
         
         signOutButton.snp.makeConstraints() {make in
@@ -261,4 +256,11 @@ class ProfileController: UIViewController {
             make.height.equalTo(53)
         }
     }
+    
+    // MARK: - Actions
+    
+    @objc private func profileButtonDidPressed() {
+        self.navigationController?.pushViewController(EditProfileController(), animated: true)
+    }
+    
 }
