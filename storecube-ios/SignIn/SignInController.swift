@@ -62,7 +62,7 @@ final class SignInController: UIViewController {
         button.setTitleColor(AppColor.black.uiColor, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 20
-        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 25)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
         return button
     }()
     
