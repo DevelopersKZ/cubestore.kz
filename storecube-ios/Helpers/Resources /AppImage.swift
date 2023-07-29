@@ -41,6 +41,8 @@ enum AppImage: String, AppImageProtocol {
     case info
     case bannerCube
     case form
+    case research
+    case newCube
     
     // MARK: - TabBar
     
