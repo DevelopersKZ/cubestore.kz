@@ -16,7 +16,7 @@ final class AboutController: UIViewController {
         let label = UILabel()
         label.text = "Ravil Assimov"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.boldSystemFont(ofSize: 36)
+        label.font = UIFont(name: "Montserrat-Bold", size: 36)
         label.textAlignment = .center
         return label
     }()
@@ -32,7 +32,7 @@ final class AboutController: UIViewController {
         let label = UILabel()
         label.text = "SnapKit\nAutoLayout\nUIKit\nSwift\nMVC\nMVP\nCoreData\nGit\nGitFlow\nNetworking"
         label.textColor = AppColor.gray.uiColor
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont(name: "Montserrat-Regular", size: 18)
         label.numberOfLines = 0
         label.textAlignment = .right
         return label
@@ -42,7 +42,7 @@ final class AboutController: UIViewController {
         let label = UILabel()
         label.text = "Radmir Telman"
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 36)
+        label.font = UIFont(name: "Montserrat-Bold", size: 36)
         label.numberOfLines = 0
         return label
     }()
@@ -59,7 +59,7 @@ final class AboutController: UIViewController {
         let label = UILabel()
         label.text = "SnapKit\nAutoLayout\nUIKit\nSwift\nGit\nGitFlow"
         label.textColor = AppColor.gray.uiColor
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont(name: "Montserrat-Regular", size: 18)
         label.numberOfLines = 0
         label.textAlignment = .right
         return label
