@@ -147,7 +147,7 @@ class ProfileController: UIViewController {
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
-        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
         return button
     }()
     

@@ -58,7 +58,7 @@ final class OnboardingController: UIViewController {
         button.setTitleColor(AppColor.black.uiColor, for: .normal)
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 20
-        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
         button.addTarget(self, action: #selector(saveButtonDidPress), for: .touchUpInside)
         return button
     }()
