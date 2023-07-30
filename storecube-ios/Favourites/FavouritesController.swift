@@ -53,6 +53,7 @@ final class FavouritesController: UIViewController {
             make.trailing.equalToSuperview().offset(-20)
             make.bottom.equalToSuperview().offset(-60)
         }
+        
     }
 }
 

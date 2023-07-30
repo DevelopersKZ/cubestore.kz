@@ -36,6 +36,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonOrdersTapped), for: .touchUpInside)
         return button
     }()
     
@@ -47,6 +48,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonProfileTapped), for: .touchUpInside)
         return button
     }()
     
@@ -70,6 +72,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonOffersTapped), for: .touchUpInside)
         return button
     }()
     
@@ -262,8 +265,20 @@ class ProfileController: UIViewController {
     
     // MARK: - Actions
     
+    @objc private func buttonOrdersTapped() {
+        self.navigationController?.pushViewController(FormController(), animated: true)
+    }
+    
+    @objc private func buttonProfileTapped() {
+        self.navigationController?.pushViewController(EditProfileController(), animated: true)
+    }
+    
     @objc private func buttonFavouriteTapped() {
         self.navigationController?.pushViewController(FavouritesController(), animated: true)
+    }
+    
+    @objc private func buttonOffersTapped() {
+        self.present(OffersController(), animated: true)
     }
     
     @objc private func buttonAboutTapped() {
