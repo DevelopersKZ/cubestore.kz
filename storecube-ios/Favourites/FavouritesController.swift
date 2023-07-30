@@ -28,6 +28,13 @@ final class FavouritesController: UIViewController {
         
         setupViews()
         setupConstraints()
+        setupNavigationBar()
+    }
+    
+    // MARK: - Actions
+    
+    private func setupNavigationBar() {
+        self.navigationItem.title = "Favourite"
     }
     
     // MARK: - setupViews
