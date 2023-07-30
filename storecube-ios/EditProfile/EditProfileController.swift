@@ -78,6 +78,13 @@ final class EditProfileController: UIViewController {
         
         setupViews()
         setupConstraints()
+        setupNavigationBar()
+    }
+    
+    // MARK: - Actions
+    
+    private func setupNavigationBar() {
+        self.navigationItem.title = "Edir profile"
     }
     
     // MARK: - setupViews
