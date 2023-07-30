@@ -37,8 +37,8 @@ final class CouponTableViewCell: UITableViewCell {
     
     private lazy var timeLabel: UILabel = {
         let label = UILabel()
-        label.text = "7 days left"
-        label.font = UIFont(name: "Montserrat-Regular", size: 18)
+        label.text = "ASSIMOVCUBE"
+        label.font = UIFont(name: "Montserrat-Regular", size: 16)
         return label
     }()
     
@@ -91,13 +91,13 @@ final class CouponTableViewCell: UITableViewCell {
         }
         
         saleLabel.snp.makeConstraints { make in
-            make.top.equalTo(couponImageView.snp.top).offset(36)
-            make.leading.equalTo(percentLabel.snp.trailing).offset(50)
+            make.top.equalTo(couponImageView.snp.top).offset(34)
+            make.leading.equalTo(percentLabel.snp.trailing).offset(42)
         }
         
         timeLabel.snp.makeConstraints() { make in
             make.top.equalTo(saleLabel.snp.bottom).offset(4)
-            make.leading.equalTo(percentLabel.snp.trailing).offset(50)
+            make.leading.equalTo(percentLabel.snp.trailing).offset(42)
         }
         
         copyButton.snp.makeConstraints { make in
