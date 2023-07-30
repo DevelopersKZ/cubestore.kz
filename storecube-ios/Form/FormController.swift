@@ -93,6 +93,13 @@ final class FormController: UIViewController {
         
         setupViews()
         setupConstraints()
+        setupNavigationBar()
+    }
+    
+    // MARK: - Actions
+    
+    private func setupNavigationBar() {
+        self.navigationItem.title = "Order"
     }
     
     // MARK: - setupViews
@@ -108,7 +115,7 @@ final class FormController: UIViewController {
     
     private func setupConstraints() {
         formImageView.snp.makeConstraints(){ make in
-            make.top.equalToSuperview().offset(80)
+            make.top.equalToSuperview().offset(100)
             make.centerX.equalToSuperview()
         }
         
