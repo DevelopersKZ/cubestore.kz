@@ -107,8 +107,7 @@ final class OnboardingController: UIViewController {
         }
         cubeStoreLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(83)
-            make.leading.equalToSuperview().offset(103)
-            make.trailing.equalToSuperview().offset(-101)
+            make.centerX.equalToSuperview()
         }
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(welcomeView).offset(32)
