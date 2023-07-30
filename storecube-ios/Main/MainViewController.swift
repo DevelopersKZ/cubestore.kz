@@ -159,6 +159,9 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             ) as? MainCollectionViewCell else {
                 fatalError("Could not cast to MainCollectionViewCell")
             }
+            cell.buyButtonTappedHandler = {
+                self.present(FormController(), animated: true)
+            }
             return cell
         }
     }

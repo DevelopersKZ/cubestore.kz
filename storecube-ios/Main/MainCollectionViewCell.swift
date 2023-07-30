@@ -10,6 +10,8 @@ import SnapKit
 
 final class MainCollectionViewCell: UICollectionViewCell {
     
+    var buyButtonTappedHandler: (() -> Void)?
+
     static let reuseID = String(describing: MainCollectionViewCell.self)
     
     // MARK: - UI
@@ -54,6 +56,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
         button.backgroundColor = AppColor.white.uiColor
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 12)
+        button.addTarget(self, action: #selector(buyButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -112,5 +115,11 @@ final class MainCollectionViewCell: UICollectionViewCell {
             make.trailing.equalTo(cubeView.snp.trailing).offset(-24)
             make.bottom.equalTo(cubeView.snp.bottom).offset(-7)
         }
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func buyButtonTapped(_ sender: UIButton) {
+        buyButtonTappedHandler?()
     }
 }
