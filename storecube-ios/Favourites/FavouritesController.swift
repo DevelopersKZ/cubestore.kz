@@ -40,7 +40,6 @@ final class FavouritesController: UIViewController {
     // MARK: - setupConstraints
     
     private func setupConstraints() {
-        
         tableView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(95)
             make.leading.equalToSuperview().offset(20)
