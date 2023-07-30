@@ -15,7 +15,7 @@ final class FavouritesController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.register(FavouriteTableViewCell.self, forCellReuseIdentifier: "Избранные")
-        tableView.rowHeight = 105
+        tableView.rowHeight = 120
         tableView.backgroundColor = AppColor.searchGray.uiColor
         tableView.layer.cornerRadius = 24
         tableView.dataSource = self
@@ -50,10 +50,10 @@ final class FavouritesController: UIViewController {
     
     private func setupConstraints() {
         tableView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(140)
+            make.top.equalToSuperview().offset(130)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
-            make.bottom.equalToSuperview().offset(-90)
+            make.bottom.equalToSuperview().offset(-115)
         }
     }
 }
