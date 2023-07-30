@@ -45,7 +45,6 @@
 		F149221B2A714F3900A8B66E /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221A2A714F3900A8B66E /* SectionType.swift */; };
 		F149221F2A71613600A8B66E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F149221E2A71613600A8B66E /* ProfileController.swift */; };
 		F14922222A7384A000A8B66E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922212A7384A000A8B66E /* TabBarController.swift */; };
-		F14922252A73E1F400A8B66E /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922242A73E1F400A8B66E /* LaunchScreenController.swift */; };
 		F18C00972A69312200A2A01E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00962A69312200A2A01E /* MainViewController.swift */; };
 		F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
@@ -97,7 +96,6 @@
 		F149221A2A714F3900A8B66E /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
 		F149221E2A71613600A8B66E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		F14922212A7384A000A8B66E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F14922242A73E1F400A8B66E /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		F18C00962A69312200A2A01E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,7 +292,6 @@
 			isa = PBXGroup;
 			children = (
 				F1E292F42A53EC16002C798A /* LaunchScreen.storyboard */,
-				F14922242A73E1F400A8B66E /* LaunchScreenController.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
