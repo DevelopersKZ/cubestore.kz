@@ -44,7 +44,7 @@ final class SearchController: UIViewController {
         tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "Поиск")
         tableView.backgroundColor = AppColor.searchGray.uiColor
         tableView.layer.cornerRadius = 16
-        tableView.rowHeight = 110
+        tableView.rowHeight = 95
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
@@ -95,7 +95,7 @@ final class SearchController: UIViewController {
             make.top.equalTo(searchView.snp.bottom).offset(30)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
-            make.bottom.equalToSuperview().offset(0)
+            make.bottom.equalToSuperview().offset(-110)
         }
     }
 }

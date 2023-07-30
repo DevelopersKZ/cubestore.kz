@@ -63,12 +63,12 @@ final class SearchTableViewCell: UITableViewCell {
         }
         
         productNameLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(30)
+            make.top.equalToSuperview().offset(20)
             make.leading.equalTo(productImageView.snp.trailing).offset(20)
         }
         
         priceLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(65)
+            make.top.equalToSuperview().offset(55)
             make.leading.equalTo(productImageView.snp.trailing).offset(20)
         }
     }
