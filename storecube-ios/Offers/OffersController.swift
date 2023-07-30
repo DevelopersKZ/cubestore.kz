@@ -39,11 +39,13 @@ final class OffersController: UIViewController {
     }
     
     // MARK: - setupConstraints
-    
+
     private func setupConstraints() {
-        
         tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.equalToSuperview().offset(50)
+            make.leading.equalToSuperview().offset(4)
+            make.trailing.equalToSuperview().offset(-4)
+            make.bottom.equalToSuperview().offset(-10)
         }
     }
 }
@@ -60,6 +62,7 @@ extension OffersController: UITableViewDataSource, UITableViewDelegate {
         ) as? CouponTableViewCell else {
             fatalError("Could not cast to file")
         }
+        cell.backgroundColor = AppColor.silver.uiColor
         return cell
     }
 }
