@@ -81,7 +81,7 @@ final class SearchController: UIViewController {
         searchImageView.snp.makeConstraints(){ make in
             make.centerY.equalTo(searchView)
             make.centerX.equalTo(searchView)
-            make.size.equalTo(CGSize(width: 24, height: 24))
+            make.size.equalTo(22)
         }
         
         searchTextField.snp.makeConstraints() { make in
