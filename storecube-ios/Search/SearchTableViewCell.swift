@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SearchTableViewCell: UITableViewCell {
+final class SearchTableViewCell: UITableViewCell {
 
     // MARK: - UI
     
@@ -43,7 +43,6 @@ class SearchTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
     }
     
     // MARK: - setupViews

@@ -27,7 +27,7 @@ final class SearchController: UIViewController {
 
     private lazy var searchTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Search"
+        textField.placeholder = "Search..."
         textField.font = UIFont(name: "Montserrat-Regular", size: 18)
         textField.backgroundColor = AppColor.searchGray.uiColor
         textField.borderStyle = .none
