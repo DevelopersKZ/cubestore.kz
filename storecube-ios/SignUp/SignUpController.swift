@@ -140,6 +140,8 @@ final class SignUpController: UIViewController {
     // MARK: - Actions
     
     @objc private func buttonSignUpTapped() {
-        self.navigationController?.pushViewController(TabBarController(), animated: true)
+        let controller = TabBarController()
+        controller.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
