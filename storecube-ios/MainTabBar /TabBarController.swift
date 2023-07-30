@@ -20,9 +20,9 @@ final class TabBarController: UITabBarController {
     private func setupTabBar() {
         viewControllers = [
             generateViewController(viewController: MainViewController(), title: "Home", image: AppImage.home.uiImage),
+            generateViewController(viewController: SearchController(), title: "Search", image: AppImage.research.uiImage),
             generateViewController(viewController: FavouritesController(), title: "Favourite", image: AppImage.heart.uiImage),
-            generateViewController(viewController: ProfileController(), title: "Profile", image: AppImage.userTab.uiImage),
-            generateViewController(viewController: AboutController(), title: "About", image: AppImage.shoppingbag.uiImage)
+            generateViewController(viewController: ProfileController(), title: "Profile", image: AppImage.userTab.uiImage)
         ]
     }
     
