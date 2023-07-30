@@ -16,15 +16,15 @@ final class SearchController: UIViewController {
         let view = UIView()
         view.backgroundColor = AppColor.searchGray.uiColor
         view.layer.cornerRadius = 16
-        let imageView = UIImageView(image: AppImage.research.uiImage)
-        imageView.contentMode = .center
-        view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         return view
     }()
 
+    private lazy var searchImageView: UIView = {
+        let imageView = UIImageView()
+        imageView.image = AppImage.research.uiImage
+        return imageView
+    }()
+    
     private lazy var searchTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Search..."
@@ -62,7 +62,7 @@ final class SearchController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [searchTextField, searchView, tableView].forEach(){
+        [searchTextField, searchView, tableView, searchImageView].forEach(){
             view.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
@@ -76,6 +76,12 @@ final class SearchController: UIViewController {
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-310)
             make.height.equalTo(53)
+        }
+        
+        searchImageView.snp.makeConstraints(){ make in
+            make.centerY.equalTo(searchView)
+            make.centerX.equalTo(searchView)
+            make.size.equalTo(CGSize(width: 24, height: 24))
         }
         
         searchTextField.snp.makeConstraints() { make in
