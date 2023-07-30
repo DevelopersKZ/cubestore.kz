@@ -28,6 +28,13 @@ final class FavouritesController: UIViewController {
         
         setupViews()
         setupConstraints()
+        setupNavigationBar()
+    }
+    
+    // MARK: - Actions
+    
+    private func setupNavigationBar() {
+        self.navigationItem.title = "Favourite"
     }
     
     // MARK: - setupViews
@@ -46,6 +53,7 @@ final class FavouritesController: UIViewController {
             make.trailing.equalToSuperview().offset(-20)
             make.bottom.equalToSuperview().offset(-60)
         }
+        
     }
 }
 

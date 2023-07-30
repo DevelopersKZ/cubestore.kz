@@ -36,6 +36,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonOrdersTapped), for: .touchUpInside)
         return button
     }()
     
@@ -47,6 +48,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonProfileTapped), for: .touchUpInside)
         return button
     }()
     
@@ -58,6 +60,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonFavouriteTapped), for: .touchUpInside)
         return button
     }()
     
@@ -69,6 +72,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonOffersTapped), for: .touchUpInside)
         return button
     }()
     
@@ -90,6 +94,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonAboutTapped), for: .touchUpInside)
         return button
     }()
     
@@ -170,6 +175,7 @@ class ProfileController: UIViewController {
     }
     
     // MARK: - setupConstraints
+    
     private func setupConstraints() {
         profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(83)
@@ -255,5 +261,27 @@ class ProfileController: UIViewController {
             make.trailing.equalToSuperview().offset(-20)
             make.height.equalTo(53)
         }
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func buttonOrdersTapped() {
+        self.navigationController?.pushViewController(FormController(), animated: true)
+    }
+    
+    @objc private func buttonProfileTapped() {
+        self.navigationController?.pushViewController(EditProfileController(), animated: true)
+    }
+    
+    @objc private func buttonFavouriteTapped() {
+        self.navigationController?.pushViewController(FavouritesController(), animated: true)
+    }
+    
+    @objc private func buttonOffersTapped() {
+        self.present(OffersController(), animated: true)
+    }
+    
+    @objc private func buttonAboutTapped() {
+        self.present(AboutController(), animated: true)
     }
 }
