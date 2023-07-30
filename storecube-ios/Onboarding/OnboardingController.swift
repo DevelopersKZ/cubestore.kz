@@ -112,8 +112,7 @@ final class OnboardingController: UIViewController {
         }
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(welcomeView).offset(32)
-            make.leading.equalTo(welcomeView).offset(69)
-            make.trailing.equalTo(welcomeView).offset(-69)
+            make.centerX.equalToSuperview()
         }
         subtitleLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(31)

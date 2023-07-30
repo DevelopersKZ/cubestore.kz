@@ -168,6 +168,6 @@ final class SignInController: UIViewController {
     }
     
     @objc func aboutButtonDidPress() {
-        self.navigationController?.pushViewController(AboutController(), animated: true)
+        self.navigationController?.pushViewController(TabBarController(), animated: true)
     }
 }

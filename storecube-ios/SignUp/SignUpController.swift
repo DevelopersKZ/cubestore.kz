@@ -77,6 +77,7 @@ final class SignUpController: UIViewController {
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
+        button.addTarget(self, action: #selector(buttonSignUpTapped), for: .touchUpInside)
         return button
     }()
     
@@ -134,5 +135,11 @@ final class SignUpController: UIViewController {
             make.trailing.equalToSuperview().offset(-30)
             make.height.equalTo(52)
         }
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func buttonSignUpTapped() {
+        self.navigationController?.pushViewController(TabBarController(), animated: true)
     }
 }
