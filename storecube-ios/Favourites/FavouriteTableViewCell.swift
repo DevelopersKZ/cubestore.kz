@@ -14,7 +14,7 @@ final class FavouriteTableViewCell: UITableViewCell {
     
     private lazy var productImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = AppImage.cube.uiImage
+        imageView.image = AppImage.newCube.uiImage
         return imageView
     }()
     
