@@ -58,6 +58,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonFavouriteTapped), for: .touchUpInside)
         return button
     }()
     
@@ -90,6 +91,7 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
+        button.addTarget(self, action: #selector(buttonAboutTapped), for: .touchUpInside)
         return button
     }()
     
@@ -170,6 +172,7 @@ class ProfileController: UIViewController {
     }
     
     // MARK: - setupConstraints
+    
     private func setupConstraints() {
         profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(83)
@@ -255,5 +258,15 @@ class ProfileController: UIViewController {
             make.trailing.equalToSuperview().offset(-20)
             make.height.equalTo(53)
         }
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func buttonFavouriteTapped() {
+        self.navigationController?.pushViewController(FavouritesController(), animated: true)
+    }
+    
+    @objc private func buttonAboutTapped() {
+        self.present(AboutController(), animated: true)
     }
 }
