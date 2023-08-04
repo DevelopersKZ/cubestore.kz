@@ -57,7 +57,12 @@ extension LocalizationController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Localization_id", for: indexPath) as! LocalizationViewCell
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "Localization_id",
+            for: indexPath
+        ) as? LocalizationViewCell else {
+            fatalError("Could not cast to LocalizationViewCell")
+        }
         cell.backgroundColor = AppColor.searchGray.uiColor
 
         switch indexPath.row {
