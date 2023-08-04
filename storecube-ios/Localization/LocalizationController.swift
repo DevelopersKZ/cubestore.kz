@@ -7,7 +7,7 @@ final class LocalizationController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.register(LocalizationViewCell.self, forCellReuseIdentifier: "Локализация")
+        tableView.register(LocalizationViewCell.self, forCellReuseIdentifier: "Localization_id")
         tableView.backgroundColor = AppColor.searchGray.uiColor
         tableView.layer.cornerRadius = 20
         tableView.rowHeight = 82
@@ -57,7 +57,7 @@ extension LocalizationController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Локализация", for: indexPath) as! LocalizationViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Localization_id", for: indexPath) as! LocalizationViewCell
         cell.backgroundColor = AppColor.searchGray.uiColor
 
         switch indexPath.row {
@@ -83,7 +83,6 @@ extension LocalizationController: UITableViewDataSource, UITableViewDelegate {
             cell.imageName = nil
             cell.localizedName = nil
         }
-
         return cell
     }
 }
