@@ -62,6 +62,18 @@ enum AppImage: String, AppImageProtocol {
     case settings
     case location
     
+    // MARK: - Loclization
+    
+    case russian
+    case usa
+    case france
+    case german
+    case spain
+    case italy
+    case china
+    case korean
+    case japan
+    
     // MARK: - About
     
     case ravil

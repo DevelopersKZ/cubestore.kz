@@ -15,6 +15,8 @@
 		51C120A22A73F1470013A12F /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C120A12A73F1470013A12F /* FormController.swift */; };
 		51C6B71D2A7541F400AA48D2 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6B71C2A7541F400AA48D2 /* SearchController.swift */; };
 		51C9460F2A7589B3005CB176 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9460E2A7589B3005CB176 /* SearchTableViewCell.swift */; };
+		51C946132A78E143005CB176 /* LocalizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C946122A78E143005CB176 /* LocalizationController.swift */; };
+		51C946152A78E403005CB176 /* LocalizationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C946142A78E403005CB176 /* LocalizationViewCell.swift */; };
 		51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A12A5976D300CF019B /* FavouritesController.swift */; };
 		51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */; };
 		7952E6FCA9A6DBA62D4F8E47 /* Pods_CubeStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39A626F08E49E62BE89499 /* Pods_CubeStore.framework */; };
@@ -64,6 +66,8 @@
 		51C120A12A73F1470013A12F /* FormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
 		51C6B71C2A7541F400AA48D2 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		51C9460E2A7589B3005CB176 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		51C946122A78E143005CB176 /* LocalizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationController.swift; sourceTree = "<group>"; };
+		51C946142A78E403005CB176 /* LocalizationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationViewCell.swift; sourceTree = "<group>"; };
 		51D433A12A5976D300CF019B /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
 		51D433A32A599F7B00CF019B /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		5F39A626F08E49E62BE89499 /* Pods_CubeStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CubeStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +180,15 @@
 				51C9460E2A7589B3005CB176 /* SearchTableViewCell.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		51C946102A78E0BC005CB176 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				51C946122A78E143005CB176 /* LocalizationController.swift */,
+				51C946142A78E403005CB176 /* LocalizationViewCell.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		51D433A02A59760800CF019B /* Favourites */ = {
@@ -345,6 +358,7 @@
 				F1E292FD2A5427A7002C798A /* SignUp */,
 				F14922232A73E1B300A8B66E /* LaunchScreen */,
 				51C120A02A73F12E0013A12F /* Form */,
+				51C946102A78E0BC005CB176 /* Localization */,
 				51A5AE242A716CC200A2991A /* AboutUs */,
 			);
 			path = "storecube-ios";
@@ -509,6 +523,8 @@
 				515EF9492A545E3200557B80 /* SignInController.swift in Sources */,
 				F134C1DA2A606E6C00E73121 /* UIView+Extensions.swift in Sources */,
 				F149221B2A714F3900A8B66E /* SectionType.swift in Sources */,
+				51C946132A78E143005CB176 /* LocalizationController.swift in Sources */,
+				51C946152A78E403005CB176 /* LocalizationViewCell.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
 				51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */,
 				F149221F2A71613600A8B66E /* ProfileController.swift in Sources */,
@@ -525,7 +541,6 @@
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
 				51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */,
 				517641BE2A5EE17200620908 /* OffersController.swift in Sources */,
-				F14922252A73E1F400A8B66E /* LaunchScreenController.swift in Sources */,
 				51C9460F2A7589B3005CB176 /* SearchTableViewCell.swift in Sources */,
 				517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */,
 				F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */,

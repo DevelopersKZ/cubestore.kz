@@ -41,7 +41,7 @@ final class SearchController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "Поиск")
+        tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "search_id")
         tableView.backgroundColor = AppColor.searchGray.uiColor
         tableView.layer.cornerRadius = 16
         tableView.rowHeight = 95
@@ -106,7 +106,12 @@ extension SearchController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Поиск", for: indexPath) as! SearchTableViewCell
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "search_id",
+            for: indexPath
+        ) as? SearchTableViewCell else {
+            fatalError("Could not cast to file")
+        }
         cell.backgroundColor = AppColor.searchGray.uiColor
         return cell
     }

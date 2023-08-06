@@ -14,7 +14,7 @@ final class FavouritesController: UIViewController {
         
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
-        tableView.register(FavouriteTableViewCell.self, forCellReuseIdentifier: "Избранные")
+        tableView.register(FavouriteTableViewCell.self, forCellReuseIdentifier: "favourites_id")
         tableView.rowHeight = 120
         tableView.backgroundColor = AppColor.searchGray.uiColor
         tableView.layer.cornerRadius = 24
@@ -64,7 +64,12 @@ extension FavouritesController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Избранные", for: indexPath) as! FavouriteTableViewCell
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "favourites_id",
+            for: indexPath
+        ) as? FavouriteTableViewCell else {
+            fatalError("Could not cast to file")
+        }
         cell.backgroundColor = AppColor.searchGray.uiColor
         return cell
     }
