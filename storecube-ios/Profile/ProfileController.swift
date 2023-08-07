@@ -84,7 +84,9 @@ class ProfileController: UIViewController {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 2.0
         button.layer.borderColor = AppColor.lightGray.cgColor
-        return button    }()
+        button.addTarget(self, action: #selector(buttonSettingsTapped), for: .touchUpInside)
+        return button
+    }()
     
     private lazy var aboutButton: UIButton = {
         let button = UIButton(type: .system)
@@ -279,6 +281,10 @@ class ProfileController: UIViewController {
     
     @objc private func buttonOffersTapped() {
         self.present(OffersController(), animated: true)
+    }
+    
+    @objc private func buttonSettingsTapped() {
+        self.navigationController?.pushViewController(LocalizationController(), animated: true)
     }
     
     @objc private func buttonAboutTapped() {
