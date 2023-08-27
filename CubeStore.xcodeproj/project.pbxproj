@@ -330,6 +330,26 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		F1DD48F32A9B6C9B002F19B6 /* Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				F18C00952A6930F200A2A01E /* Main */,
+				F14922202A73847E00A8B66E /* MainTabBar  */,
+				F134C1D32A60675D00E73121 /* Onboarding */,
+				517641BC2A5EE10400620908 /* Offers */,
+				F149221D2A71611B00A8B66E /* Profile */,
+				517641B52A5D515A00620908 /* EditProfile */,
+				51C6B71B2A7541C100AA48D2 /* Search */,
+				51D433A02A59760800CF019B /* Favourites */,
+				515EF9472A545DBC00557B80 /* SignIn */,
+				F1E292FD2A5427A7002C798A /* SignUp */,
+				51C120A02A73F12E0013A12F /* Form */,
+				51C946102A78E0BC005CB176 /* Localization */,
+				51A5AE242A716CC200A2991A /* AboutUs */,
+			);
+			path = "Controllers ";
+			sourceTree = "<group>";
+		};
 		F1E292DD2A53EC14002C798A = {
 			isa = PBXGroup;
 			children = (
@@ -352,19 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E292F72A53EC16002C798A /* Info.plist */,
-				F18C00952A6930F200A2A01E /* Main */,
-				F14922202A73847E00A8B66E /* MainTabBar  */,
-				F134C1D32A60675D00E73121 /* Onboarding */,
-				517641BC2A5EE10400620908 /* Offers */,
-				F149221D2A71611B00A8B66E /* Profile */,
-				517641B52A5D515A00620908 /* EditProfile */,
-				51C6B71B2A7541C100AA48D2 /* Search */,
-				51D433A02A59760800CF019B /* Favourites */,
-				515EF9472A545DBC00557B80 /* SignIn */,
-				F1E292FD2A5427A7002C798A /* SignUp */,
-				51C120A02A73F12E0013A12F /* Form */,
-				51C946102A78E0BC005CB176 /* Localization */,
-				51A5AE242A716CC200A2991A /* AboutUs */,
+				F1DD48F32A9B6C9B002F19B6 /* Controllers  */,
 				F134C1D62A606E0300E73121 /* Helpers */,
 				F1DD48F22A9B66F0002F19B6 /* Application */,
 				F14922232A73E1B300A8B66E /* LaunchScreen */,
