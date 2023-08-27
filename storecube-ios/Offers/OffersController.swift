@@ -15,7 +15,7 @@ final class OffersController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(CouponTableViewCell.self, forCellReuseIdentifier: "Coupon")
-        tableView.rowHeight = 145
+        tableView.rowHeight = 148
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
@@ -64,5 +64,9 @@ extension OffersController: UITableViewDataSource, UITableViewDelegate {
         }
         cell.backgroundColor = AppColor.silver.uiColor
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
