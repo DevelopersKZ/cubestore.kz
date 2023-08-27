@@ -66,31 +66,13 @@ final class SignInController: UIViewController {
         return button
     }()
     
-    private lazy var helpRegisterLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Do you already have an account?"
-        label.textColor = AppColor.black.uiColor
-        label.font = UIFont(name: "Montserrat-Regular", size: 20)
-        label.numberOfLines = 0
-        label.textAlignment = .left
-        return label
-    }()
-    
-    private lazy var helpRegisterButton: UIButton = {
+    private lazy var forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Register", for: .normal)
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
+        let attributedText = NSAttributedString(string: "Forgot Password", attributes: underlineAttribute)
+        button.setAttributedTitle(attributedText, for: .normal)
         button.setTitleColor(AppColor.aqua.uiColor, for: .normal)
-        button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
-        button.titleLabel?.attributedText = NSAttributedString(string: "Register", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
-        button.addTarget(self, action: #selector(registerHelpButtonDidPress), for: .touchUpInside)
-        return button
-    }()
-    
-    private lazy var aboutButton: UIButton = {
-        let button = UIButton()
-        button.setImage(AppImage.info.uiImage, for: .normal)
-        button.addTarget(self, action: #selector(aboutButtonDidPress), for: .touchUpInside)
         return button
     }()
 
@@ -106,7 +88,7 @@ final class SignInController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [imageCarl, signUpLabel, emailTextField, passwordTextField, signUpButton, helpRegisterLabel, helpRegisterButton, aboutButton].forEach {
+        [imageCarl, signUpLabel, emailTextField, passwordTextField, signUpButton, forgotPasswordButton].forEach {
             view.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
@@ -142,20 +124,10 @@ final class SignInController: UIViewController {
             make.trailing.equalToSuperview().offset(-30)
             make.height.equalTo(52)
         }
-        helpRegisterLabel.snp.makeConstraints { make in
-            make.top.equalTo(signUpButton.snp.bottom).offset(38)
-            make.leading.equalToSuperview().offset(35)
-            make.trailing.equalToSuperview().offset(-33)
-        }
-        helpRegisterButton.snp.makeConstraints { make in
-            make.trailing.equalToSuperview().offset(-145)
+        forgotPasswordButton.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(34)
+            make.trailing.equalToSuperview().offset(-30)
             make.bottom.equalToSuperview().offset(-30)
-        }
-        aboutButton.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(290)
-            make.trailing.equalToSuperview().offset(-40)
-            make.bottom.equalToSuperview().offset(-35)
-            make.height.equalTo(52)
         }
     }
     
@@ -165,9 +137,5 @@ final class SignInController: UIViewController {
         let controller = SignUpController()
         controller.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(controller, animated: true)
-    }
-    
-    @objc func aboutButtonDidPress() {
-        self.navigationController?.pushViewController(TabBarController(), animated: true)
     }
 }

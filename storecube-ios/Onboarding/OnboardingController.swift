@@ -87,6 +87,7 @@ final class OnboardingController: UIViewController {
             welcomeView.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func cornerRadius() {

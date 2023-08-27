@@ -81,6 +81,17 @@ final class SignUpController: UIViewController {
         return button
     }()
     
+    private lazy var loginKnowButton: UIButton = {
+        let button = UIButton(type: .system)
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
+        let attributedText = NSAttributedString(string: "Have an account? Login", attributes: underlineAttribute)
+        button.setAttributedTitle(attributedText, for: .normal)
+        button.setTitleColor(AppColor.aqua.uiColor, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)
+        button.addTarget(self, action: #selector(buttonSignUpTapped), for: .touchUpInside)
+        return button
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -93,7 +104,7 @@ final class SignUpController: UIViewController {
     // MARK: - setupViews
     
     private func setupViews() {
-        [imageJimmy, signUpLabel, nameTextField, emailTextField, passwordTextField, signUpButton].forEach {
+        [imageJimmy, signUpLabel, nameTextField, emailTextField, passwordTextField, signUpButton, loginKnowButton].forEach {
             view.addSubview($0)
         }
         view.backgroundColor = AppColor.silver.uiColor
@@ -134,6 +145,11 @@ final class SignUpController: UIViewController {
             make.leading.equalToSuperview().offset(34)
             make.trailing.equalToSuperview().offset(-30)
             make.height.equalTo(52)
+        }
+        loginKnowButton.snp.makeConstraints { make in
+            make.top.equalTo(signUpButton.snp.bottom).offset(15)
+            make.leading.equalToSuperview().offset(34)
+            make.trailing.equalToSuperview().offset(-30)
         }
     }
     
