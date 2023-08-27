@@ -24,6 +24,7 @@ final class TabBarController: UITabBarController {
             generateViewController(viewController: FavouritesController(), title: "Favourite", image: AppImage.heart.uiImage),
             generateViewController(viewController: ProfileController(), title: "Profile", image: AppImage.userTab.uiImage)
         ]
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func generateViewController(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
