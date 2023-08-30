@@ -8,5 +8,6 @@ target 'CubeStore' do
   # Pods for CubeStore
 
   pod 'SnapKit', '5.6.0'
+  pod 'SnackBar.swift'
 
 end

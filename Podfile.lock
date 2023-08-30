@@ -1,16 +1,21 @@
 PODS:
+  - SnackBar.swift (0.1.0):
+    - SnapKit
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - SnackBar.swift
   - SnapKit (= 5.6.0)
 
 SPEC REPOS:
   trunk:
+    - SnackBar.swift
     - SnapKit
 
 SPEC CHECKSUMS:
+  SnackBar.swift: 79ea4df13ea9e6633137dd6acbd490534d26440d
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: cf81e86db72160d7a8606a1b76a934af8d46782c
+PODFILE CHECKSUM: 2f5b01795c866b968a59cbb4a1fd87b67b1385ad
 
 COCOAPODS: 1.12.1
