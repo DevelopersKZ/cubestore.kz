@@ -53,6 +53,7 @@ final class SignUpController: UIViewController {
         textField.textColor = AppColor.black.uiColor
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 0))
         textField.leftViewMode = .always
+        textField.autocapitalizationType = .none
         return textField
     }()
     
