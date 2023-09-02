@@ -94,7 +94,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
         cubeView.snp.makeConstraints { make in
             make.width.equalTo(169)
             make.height.equalTo(191)
-        }
+        } 
         cubeImageView.snp.makeConstraints { make in
             make.top.equalTo(cubeView.snp.top).offset(11)
             make.leading.equalTo(cubeView.snp.leading).offset(16)

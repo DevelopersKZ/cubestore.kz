@@ -78,7 +78,7 @@ class ProfileController: UIViewController {
     
     private lazy var settingsButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = AppImage.settings.uiImage
+        let image = AppImage.loc.uiImage
         button.setImage(image, for: .normal)
         button.backgroundColor = AppColor.silver.uiColor
         button.layer.cornerRadius = 26
@@ -134,7 +134,7 @@ class ProfileController: UIViewController {
     
     private lazy var settingsLabel: UILabel = {
         let label = UILabel()
-        label.text = "Settings"
+        label.text = "Localization"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont(name: "Montserrat-Regular", size: 12)
         return label

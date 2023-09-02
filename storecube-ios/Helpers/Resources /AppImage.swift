@@ -61,6 +61,7 @@ enum AppImage: String, AppImageProtocol {
     case offer
     case settings
     case location
+    case loc
     
     // MARK: - Loclization
     
