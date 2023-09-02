@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514FCD932A9E2A0E00CC3AD9 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FCD922A9E2A0E00CC3AD9 /* ProductController.swift */; };
 		515EF9492A545E3200557B80 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EF9482A545E3200557B80 /* SignInController.swift */; };
 		517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BA2A5D542B00620908 /* EditProfileController.swift */; };
 		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.debug.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		514FCD922A9E2A0E00CC3AD9 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
 		515EF9482A545E3200557B80 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 				5F39A626F08E49E62BE89499 /* Pods_CubeStore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		514FCD912A9E29B300CC3AD9 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				514FCD922A9E2A0E00CC3AD9 /* ProductController.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 		515EF9472A545DBC00557B80 /* SignIn */ = {
@@ -336,6 +346,7 @@
 				F18C00952A6930F200A2A01E /* Main */,
 				F14922202A73847E00A8B66E /* MainTabBar  */,
 				F134C1D32A60675D00E73121 /* Onboarding */,
+				514FCD912A9E29B300CC3AD9 /* Product */,
 				517641BC2A5EE10400620908 /* Offers */,
 				F149221D2A71611B00A8B66E /* Profile */,
 				517641B52A5D515A00620908 /* EditProfile */,
@@ -554,6 +565,7 @@
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
 				51C120A22A73F1470013A12F /* FormController.swift in Sources */,
 				51C6B71D2A7541F400AA48D2 /* SearchController.swift in Sources */,
+				514FCD932A9E2A0E00CC3AD9 /* ProductController.swift in Sources */,
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
 				51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */,
 				517641BE2A5EE17200620908 /* OffersController.swift in Sources */,
