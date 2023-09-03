@@ -216,6 +216,7 @@ final class ProductController: UIViewController {
         button.backgroundColor = AppColor.aqua.uiColor
         button.layer.cornerRadius = 14
         button.titleLabel?.font = UIFont(name: "Montserrat-Medium", size: 20)
+        button.addTarget(self, action: #selector(buttonBuyTapped), for: .touchUpInside)
         return button
     }()
     
@@ -241,7 +242,7 @@ final class ProductController: UIViewController {
     
     private func setupConstraints() {
         cubeImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(77)
+            make.top.equalToSuperview().offset(110)
             make.leading.equalToSuperview().offset(30)
             make.trailing.equalToSuperview().offset(-30)
         }
@@ -382,5 +383,9 @@ final class ProductController: UIViewController {
             make.trailing.equalToSuperview().offset(-30)
             make.height.equalTo(53)
         }
+    }
+    
+    @objc private func buttonBuyTapped() {
+        self.navigationController?.pushViewController(FormController(), animated: true)
     }
 }

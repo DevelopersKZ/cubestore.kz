@@ -257,7 +257,7 @@ class ProfileController: UIViewController {
             make.centerX.equalTo(aboutButton.snp.centerX)
         }
         
-        signOutButton.snp.makeConstraints() {make in
+        signOutButton.snp.makeConstraints() { make in
             make.top.equalTo(profileMainLabel.snp.bottom).offset(350)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)

@@ -160,7 +160,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
                 fatalError("Could not cast to MainCollectionViewCell")
             }
             cell.buyButtonTappedHandler = {
-                self.present(FormController(), animated: true)
+                self.navigationController?.pushViewController(ProductController(), animated: true)
             }
             return cell
         }
