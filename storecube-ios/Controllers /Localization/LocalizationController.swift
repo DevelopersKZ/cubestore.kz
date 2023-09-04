@@ -73,9 +73,9 @@ extension LocalizationController: UITableViewDataSource, UITableViewDelegate {
         case 2:
             cell.configure(with: AppImage.france.rawValue , localizedName: "Français")
         case 3:
-            cell.configure(with: AppImage.german.rawValue , localizedName: "Español")
+            cell.configure(with: AppImage.german.rawValue , localizedName: "Deutsch")
         case 4:
-            cell.configure(with: AppImage.spain.rawValue , localizedName: "Deutsch")
+            cell.configure(with: AppImage.spain.rawValue , localizedName: "Español")
         case 5:
             cell.configure(with: AppImage.italy.rawValue , localizedName: "Italiano")
         case 6:
