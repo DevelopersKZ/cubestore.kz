@@ -4,11 +4,11 @@
 //
 //  Created by Радмир Тельман on 18.07.2023.
 //
-
+ 
 import UIKit
 import SnapKit
 
-class ProfileController: UIViewController {
+final class ProfileController: UIViewController {
 
     // MARK: - UI
     
