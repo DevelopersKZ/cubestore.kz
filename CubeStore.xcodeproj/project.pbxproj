@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		514FCD932A9E2A0E00CC3AD9 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FCD922A9E2A0E00CC3AD9 /* ProductController.swift */; };
+		514FCD9E2AB06D1500CC3AD9 /* CubeProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FCD9D2AB06D1400CC3AD9 /* CubeProducts.swift */; };
+		514FCDA02AB06DB000CC3AD9 /* CubeProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FCD9F2AB06DB000CC3AD9 /* CubeProductService.swift */; };
 		515EF9492A545E3200557B80 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515EF9482A545E3200557B80 /* SignInController.swift */; };
 		517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BA2A5D542B00620908 /* EditProfileController.swift */; };
 		517641BE2A5EE17200620908 /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517641BD2A5EE17200620908 /* OffersController.swift */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		3816E0D29FF02DB3D4BA2CD9 /* Pods-storecube-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storecube-ios.debug.xcconfig"; path = "Target Support Files/Pods-storecube-ios/Pods-storecube-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		514FCD922A9E2A0E00CC3AD9 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		514FCD9D2AB06D1400CC3AD9 /* CubeProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeProducts.swift; sourceTree = "<group>"; };
+		514FCD9F2AB06DB000CC3AD9 /* CubeProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeProductService.swift; sourceTree = "<group>"; };
 		515EF9482A545E3200557B80 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		517641BA2A5D542B00620908 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		517641BD2A5EE17200620908 /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,23 @@
 				514FCD922A9E2A0E00CC3AD9 /* ProductController.swift */,
 			);
 			path = Product;
+			sourceTree = "<group>";
+		};
+		514FCD9B2AB06C2A00CC3AD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */,
+				F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		514FCD9C2AB06C5700CC3AD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F18C00962A69312200A2A01E /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		515EF9472A545DBC00557B80 /* SignIn */ = {
@@ -300,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				F149221A2A714F3900A8B66E /* SectionType.swift */,
+				514FCD9D2AB06D1400CC3AD9 /* CubeProducts.swift */,
+				514FCD9F2AB06DB000CC3AD9 /* CubeProductService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,9 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				F14922192A714F2E00A8B66E /* Model */,
-				F18C00962A69312200A2A01E /* MainViewController.swift */,
-				F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */,
-				F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */,
+				514FCD9B2AB06C2A00CC3AD9 /* View */,
+				514FCD9C2AB06C5700CC3AD9 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -593,6 +615,7 @@
 				F149221B2A714F3900A8B66E /* SectionType.swift in Sources */,
 				51C946132A78E143005CB176 /* LocalizationController.swift in Sources */,
 				51C946152A78E403005CB176 /* LocalizationViewCell.swift in Sources */,
+				514FCDA02AB06DB000CC3AD9 /* CubeProductService.swift in Sources */,
 				F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */,
 				51D433A22A5976D300CF019B /* FavouritesController.swift in Sources */,
 				F149221F2A71613600A8B66E /* ProfileController.swift in Sources */,
@@ -605,6 +628,7 @@
 				51D433A42A599F7B00CF019B /* FavouriteTableViewCell.swift in Sources */,
 				F14922222A7384A000A8B66E /* TabBarController.swift in Sources */,
 				F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */,
+				514FCD9E2AB06D1500CC3AD9 /* CubeProducts.swift in Sources */,
 				51C120A22A73F1470013A12F /* FormController.swift in Sources */,
 				51C6B71D2A7541F400AA48D2 /* SearchController.swift in Sources */,
 				514FCD932A9E2A0E00CC3AD9 /* ProductController.swift in Sources */,
