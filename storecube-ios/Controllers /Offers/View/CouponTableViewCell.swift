@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class CouponTableViewCell: UITableViewCell {
-    
+        
     // MARK: - UI
     
     private lazy var couponImageView: UIImageView = {
@@ -35,7 +35,7 @@ final class CouponTableViewCell: UITableViewCell {
         return label
     }()
     
-    private lazy var timeLabel: UILabel = {
+    private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.text = "ASSIMOVCUBE"
         label.font = UIFont(name: "Montserrat-Regular", size: 16)
@@ -69,7 +69,7 @@ final class CouponTableViewCell: UITableViewCell {
     // MARK: - setupViews
     
     private func setupViews() {
-        [couponImageView, percentLabel, saleLabel, timeLabel, copyButton].forEach {
+        [couponImageView, percentLabel, saleLabel, nameLabel, copyButton].forEach {
             contentView.addSubview($0)
         }
     }
@@ -95,7 +95,7 @@ final class CouponTableViewCell: UITableViewCell {
             make.leading.equalTo(percentLabel.snp.trailing).offset(42)
         }
         
-        timeLabel.snp.makeConstraints() { make in
+        nameLabel.snp.makeConstraints() { make in
             make.top.equalTo(saleLabel.snp.bottom).offset(4)
             make.leading.equalTo(percentLabel.snp.trailing).offset(42)
         }
@@ -105,5 +105,12 @@ final class CouponTableViewCell: UITableViewCell {
             make.trailing.equalTo(couponImageView.snp.trailing).offset(-20)
             make.size.equalTo(70)
         }
+    }
+    
+    // MARK: - Actions
+    
+    func configure(with offer: CubeOffer) {
+        nameLabel.text = offer.name
+        percentLabel.text = "\(offer.percents)\n%"
     }
 }

@@ -50,6 +50,8 @@
 		F14922222A7384A000A8B66E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14922212A7384A000A8B66E /* TabBarController.swift */; };
 		F18C00972A69312200A2A01E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00962A69312200A2A01E /* MainViewController.swift */; };
 		F18C00992A69341100A2A01E /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */; };
+		F1A6B8F52AB066A2000A2CB8 /* CubeOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6B8F42AB066A2000A2CB8 /* CubeOffer.swift */; };
+		F1A6B8F72AB066C4000A2CB8 /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6B8F62AB066C4000A2CB8 /* CubeService.swift */; };
 		F1DD48F62A9F43B8002F19B6 /* SnackBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD48F52A9F43B8002F19B6 /* SnackBarController.swift */; };
 		F1E292EA2A53EC14002C798A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292E92A53EC14002C798A /* AppDelegate.swift */; };
 		F1E292EC2A53EC14002C798A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E292EB2A53EC14002C798A /* SceneDelegate.swift */; };
@@ -105,6 +107,8 @@
 		F14922212A7384A000A8B66E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F18C00962A69312200A2A01E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F18C00982A69341100A2A01E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1A6B8F42AB066A2000A2CB8 /* CubeOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeOffer.swift; sourceTree = "<group>"; };
+		F1A6B8F62AB066C4000A2CB8 /* CubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeService.swift; sourceTree = "<group>"; };
 		F1DD48F52A9F43B8002F19B6 /* SnackBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarController.swift; sourceTree = "<group>"; };
 		F1E292E62A53EC14002C798A /* CubeStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E292E92A53EC14002C798A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,8 +167,9 @@
 		517641BC2A5EE10400620908 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
-				517641BD2A5EE17200620908 /* OffersController.swift */,
-				517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */,
+				F1A6B8F32AB06690000A2CB8 /* Model */,
+				F1A6B8F22AB0668A000A2CB8 /* View */,
+				F1A6B8F12AB06684000A2CB8 /* Controller */,
 			);
 			path = Offers;
 			sourceTree = "<group>";
@@ -332,6 +337,31 @@
 				F14922172A714D3800A8B66E /* BannerCollectionViewCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F1A6B8F12AB06684000A2CB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				517641BD2A5EE17200620908 /* OffersController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1A6B8F22AB0668A000A2CB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				517641BF2A5FE96B00620908 /* CouponTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1A6B8F32AB06690000A2CB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1A6B8F42AB066A2000A2CB8 /* CubeOffer.swift */,
+				F1A6B8F62AB066C4000A2CB8 /* CubeService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F1DD48F22A9B66F0002F19B6 /* Application */ = {
@@ -580,8 +610,10 @@
 				514FCD932A9E2A0E00CC3AD9 /* ProductController.swift in Sources */,
 				F1E292FF2A5427D1002C798A /* SignUpController.swift in Sources */,
 				51A5AE262A716CFF00A2991A /* AboutController.swift in Sources */,
+				F1A6B8F52AB066A2000A2CB8 /* CubeOffer.swift in Sources */,
 				517641BE2A5EE17200620908 /* OffersController.swift in Sources */,
 				51C9460F2A7589B3005CB176 /* SearchTableViewCell.swift in Sources */,
+				F1A6B8F72AB066C4000A2CB8 /* CubeService.swift in Sources */,
 				517641BB2A5D542B00620908 /* EditProfileController.swift in Sources */,
 				F134C1D52A60677800E73121 /* OnboardingController.swift in Sources */,
 			);

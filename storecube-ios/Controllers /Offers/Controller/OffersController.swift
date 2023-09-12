@@ -10,6 +10,8 @@ import SnapKit
 
 final class OffersController: UIViewController {
     
+    private var offers: [CubeOffer] = []
+    
     // MARK: - UI
         
     private lazy var tableView: UITableView = {
@@ -29,6 +31,7 @@ final class OffersController: UIViewController {
         
         setupViews()
         setupConstraints()
+        fetchOffer()
     }
     
     // MARK: - setupViews
@@ -48,11 +51,29 @@ final class OffersController: UIViewController {
             make.bottom.equalToSuperview().offset(-10)
         }
     }
+    
+    // MARK: - fetchOffer
+    
+    private func fetchOffer() {
+        CubeService.fetchOffers { offer, error in
+            if let error = error {
+                print("Error fetching offer: \(error)")
+                return
+            }
+
+            if let offer = offer {
+                self.offers = offer
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
 }
 
 extension OffersController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return offers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,6 +84,8 @@ extension OffersController: UITableViewDataSource, UITableViewDelegate {
             fatalError("Could not cast to file")
         }
         cell.backgroundColor = AppColor.silver.uiColor
+        let offer = offers[indexPath.row]
+        cell.configure(with: offer)
         return cell
     }
     
