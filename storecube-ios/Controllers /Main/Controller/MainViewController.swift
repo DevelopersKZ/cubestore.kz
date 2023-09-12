@@ -11,13 +11,14 @@ import SnapKit
 final class MainViewController: UIViewController {
     
     let sections: [SectionType] = [.promos, .main]
+    private var products: [CubeProduct] = []
     
     // MARK: - UI
     
     lazy var mainCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
         collectionView.dataSource = self
-        collectionView.delegate = self
+        collectionView.delegate = self  
         collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.reuseID)
         collectionView.register(BannerCollectionViewCell.self, forCellWithReuseIdentifier: BannerCollectionViewCell.reuseID)
         collectionView.backgroundColor = .clear
@@ -31,6 +32,7 @@ final class MainViewController: UIViewController {
         
         setupViews()
         setupConstraints()
+        fetchProducts()
     }
     
     // MARK: - setupViews
@@ -56,6 +58,24 @@ final class MainViewController: UIViewController {
                 return self?.promoSectionLayout()
             case .main:
                 return self?.mainSectionLayout()
+            }
+        }
+    }
+    
+    // MARK: - fetchProduct
+    
+    private func fetchProducts() {
+        CubeProductService.fetchProducts { product, error in
+            if let error = error {
+                print("Error fetching offer: \(error)")
+                return
+            }
+
+            if let product = product {
+                self.products = product
+                DispatchQueue.main.async {
+                    self.mainCollectionView.reloadData()
+                }
             }
         }
     }
@@ -162,6 +182,8 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.buyButtonTappedHandler = {
                 self.navigationController?.pushViewController(ProductController(), animated: true)
             }
+            let product = products[indexPath.row]
+            cell.configure(with: product)
             return cell
         }
     }
@@ -172,7 +194,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         case .promos:
             return 3
         case .main:
-            return 15
+            return products.count
         }
     }
 }

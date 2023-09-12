@@ -37,7 +37,7 @@ final class MainCollectionViewCell: UICollectionViewCell {
         label.text = "ChinaCube"
         label.textColor = AppColor.black.uiColor
         label.font = UIFont(name: "Montserrat-Regular", size: 17)
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         return label
     }()
     
@@ -103,7 +103,8 @@ final class MainCollectionViewCell: UICollectionViewCell {
         }
         cubeLabel.snp.makeConstraints { make in
             make.top.equalTo(cubeImageView.snp.bottom).offset(3)
-            make.centerX.equalTo(cubeView.snp.centerX)
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().offset(-10)
         }
         priceLabel.snp.makeConstraints { make in
             make.top.equalTo(cubeLabel.snp.bottom).offset(3)
@@ -121,5 +122,17 @@ final class MainCollectionViewCell: UICollectionViewCell {
     
     @objc private func buyButtonTapped(_ sender: UIButton) {
         buyButtonTappedHandler?()
+    }
+    
+    func configure(with product: CubeProduct) {
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: product.imageUrl) {
+                DispatchQueue.main.async {
+                    self.cubeImageView.image = UIImage(data: data)
+                }
+            }
+        }
+        cubeLabel.text = product.name
+        priceLabel.text = "\(product.price) тенге"
     }
 }
