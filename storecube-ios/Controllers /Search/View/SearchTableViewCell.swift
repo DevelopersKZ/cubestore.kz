@@ -72,4 +72,20 @@ final class SearchTableViewCell: UITableViewCell {
             make.leading.equalTo(productImageView.snp.trailing).offset(20)
         }
     }
+    
+    // MARK: - Actions
+
+    func configure(with productSearch: CubeProduct) {
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: productSearch.imageUrl) {
+                DispatchQueue.main.async {
+                    self.productImageView.image = UIImage(data: data)
+                }
+            }
+        }
+        productNameLabel.text = productSearch.name
+        priceLabel.text = "\(productSearch.price) тенге"
+    }
 }
+
+
