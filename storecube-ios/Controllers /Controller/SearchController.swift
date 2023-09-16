@@ -10,6 +10,8 @@ import SnapKit
 
 final class SearchController: UIViewController {
 
+    private var productsSearch: [CubeProduct] = []
+    
     // MARK: - UI
     
     private lazy var searchView: UIView = {
@@ -57,6 +59,7 @@ final class SearchController: UIViewController {
         
         setupViews()
         setupConstraints()
+        fetchProducts()
     }
     
     // MARK: - setupViews
@@ -98,11 +101,29 @@ final class SearchController: UIViewController {
             make.bottom.equalToSuperview().offset(-110)
         }
     }
+    
+    // MARK: - fetchProduct
+    
+    private func fetchProducts() {
+        CubeProductService.fetchProducts { product, error in
+            if let error = error {
+                print("Error fetching offer: \(error)")
+                return
+            }
+
+            if let product = product {
+                self.productsSearch = product
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
 }
 
 extension SearchController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return productsSearch.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -112,6 +133,8 @@ extension SearchController: UITableViewDataSource, UITableViewDelegate {
         ) as? SearchTableViewCell else {
             fatalError("Could not cast to file")
         }
+        let productSearch = productsSearch[indexPath.row]
+        cell.configure(with: productSearch)
         cell.backgroundColor = AppColor.searchGray.uiColor
         return cell
     }

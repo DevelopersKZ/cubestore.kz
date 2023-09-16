@@ -43,4 +43,3 @@ class CubeProductService {
         task.resume()
     }
 }
-

@@ -169,6 +169,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		514FCDB42AB2EEF200CC3AD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51C6B71C2A7541F400AA48D2 /* SearchController.swift */,
+			);
+			name = Controller;
+			path = ../Controller;
+			sourceTree = "<group>";
+		};
+		514FCDB52AB2EEFC00CC3AD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51C9460E2A7589B3005CB176 /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		515EF9472A545DBC00557B80 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,8 +231,8 @@
 		51C6B71B2A7541C100AA48D2 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				51C6B71C2A7541F400AA48D2 /* SearchController.swift */,
-				51C9460E2A7589B3005CB176 /* SearchTableViewCell.swift */,
+				514FCDB52AB2EEFC00CC3AD9 /* View */,
+				514FCDB42AB2EEF200CC3AD9 /* Controller */,
 			);
 			path = Search;
 			sourceTree = "<group>";
